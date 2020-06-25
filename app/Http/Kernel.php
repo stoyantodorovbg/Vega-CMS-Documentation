@@ -63,5 +63,8 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        'admins' => \Vegacms\Cms\Http\Middleware\Admins::class,
+        'moderators' => \Vegacms\Cms\Http\Middleware\Moderators::class,
+        'ordinaryUsers' => \Vegacms\Cms\Http\Middleware\OrdinaryUsers::class,
     ];
 }
