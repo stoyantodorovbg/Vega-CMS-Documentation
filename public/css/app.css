@@ -20905,3 +20905,60 @@ section {
   height: 2rem;
 }
 
+.home-page {
+  background: #282828;
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.home-page .title {
+  color: peachpuff;
+  font-weight: bolder;
+  font-size: 7rem;
+  text-align: center;
+  padding-top: 18rem;
+  letter-spacing: 0.5rem;
+}
+
+.home-page .description {
+  font-size: 1.7rem;
+  color: peachpuff;
+  max-width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.home-page .footer {
+  font-size: 1.5rem;
+  color: white;
+  text-align: right;
+  padding-top: 5rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+}
+
+.documentation-main-nav {
+  background: #282828;
+  height: auto;
+  padding-top: 3rem;
+}
+
+.documentation-main-nav .nav-item a {
+  padding: 4rem;
+  color: skyblue;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (max-width: 760px) {
+  .documentation-main-nav .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+}
+

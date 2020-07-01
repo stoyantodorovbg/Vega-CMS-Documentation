@@ -1,0 +1,22 @@
+.documentation-main-nav {
+    background: #282828;
+    height: auto;
+    padding-top: 3rem;
+
+    .nav-item {
+        a {
+            padding: 4rem;
+            color: skyblue;
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+
+    @media (max-width: 760px) {
+        .nav-item {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

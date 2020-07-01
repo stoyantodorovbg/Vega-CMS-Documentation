@@ -1,2 +1,9 @@
-//
+// Vega CMS SCSS
 @import '../assets/sass/app.scss';
+
+// Pages
+@import 'pages/home.scss';
+
+// Components
+@import 'components/documentation-main-nav.scss';
+

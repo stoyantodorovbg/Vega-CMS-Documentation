@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-    Route::get('/welcome', 'Front\WelcomeController@index')->name('welcome');
-    Route::get('/home', 'Front\HomeController@index')->name('home')->middleware('ordinaryUsers');
-    Route::post('/set-locale', 'Front\LocalesController@setLocale')->name('locales.set-locale');
-});
+Route::prefix(app()->getLocale())
+    ->middleware(['locale', 'web', 'bindings'])
+    ->namespace('\Vegacms\Cms\Http\Controllers')
+    ->group(function () {
+        Auth::routes();
+        Route::post('/set-locale', 'Front\LocalesController@setLocale')->name('locales.set-locale');
+    });
+
+Route::prefix(app()->getLocale())
+    ->middleware(['locale', 'web', 'bindings'])
+    ->group(function () {
+        Route::get('/', 'Front\HomeController@index')->name('home');
+    });
