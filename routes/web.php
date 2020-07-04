@@ -25,5 +25,7 @@ Route::prefix(app()->getLocale())
 Route::prefix(app()->getLocale())
     ->middleware(['locale', 'web', 'bindings'])
     ->group(function () {
-        Route::get('/', 'Front\HomeController@index')->name('home');
-    });
+    Route::get('/', 'Front\HomeController@index')->name('main-home');
+    Route::get('/documentation', 'Front\DocumentationController@home')->name('documentation-home');
+    Route::get('/home', 'Front\HomeController@index')->name('home')->middleware('ordinaryUsers');
+});

@@ -1,9 +1,10 @@
 // Vega CMS SCSS
-@import '../assets/sass/app.scss';
+@import '../assets/sass/app';
 
 // Pages
-@import 'pages/home.scss';
+@import 'pages/home';
+@import 'pages/documentation-home';
 
 // Components
-@import 'components/documentation-main-nav.scss';
-
+@import 'components/home-main-nav';
+@import 'components/documentation-side-nav';

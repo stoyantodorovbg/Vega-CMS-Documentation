@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container home-page">
-        <div class="">
+        <div>
             <dynamic-menu :menu_id="2"></dynamic-menu>
         </div>
         <h1 class="title">Vega CMS</h1>

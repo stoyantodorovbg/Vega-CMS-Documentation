@@ -1,0 +1,40 @@
+.documentation-home-page {
+    min-width: 100%;
+
+    .content {
+        min-height: 85rem;
+        display: flex;
+        justify-content: center;
+        background: gainsboro;
+
+        h1 {
+            font-weight: bold;
+            font-size: 7rem;
+            margin-top: 7rem;
+            color: maroon;
+
+            span {
+                font-weight: bolder;
+            }
+        }
+    }
+
+    .footer {
+        max-height: 3rem;
+        background: navajowhite;
+        font-size: 1.5rem;
+        color: green;
+        text-align: right;
+        padding: 0.5rem;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: 760px) {
+        .footer {
+            font-size: 1.2rem;
+        }
+    }
+}

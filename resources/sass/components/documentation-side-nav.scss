@@ -1,0 +1,55 @@
+.documentation-home-sidebar {
+    background: beige;
+
+    @media (max-width: 760px) {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        min-height: 100%;
+        flex: 100%;
+    }
+
+    .documentation-side-nav {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+
+        div {
+            padding: 0.7rem 0.5rem 0.5rem 0.8rem;
+            font-size: 1.6rem;
+
+            a {
+                color: saddlebrown;
+                font-weight: bold;
+            }
+        }
+
+        @media (max-width: 760px) {
+            display: block;
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+
+            div {
+                display: inline-block;
+                padding: 0.5rem;
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 500px) {
+            max-width: 100%;
+            text-align: center;
+            padding-top: 0.7rem;
+            padding-bottom: 0.2rem;
+
+            div {
+                display: block;
+                padding: 0;
+                font-size: 1.2rem;
+
+                a {
+                    //font-weight: normal;
+                }
+            }
+        }
+    }
+}

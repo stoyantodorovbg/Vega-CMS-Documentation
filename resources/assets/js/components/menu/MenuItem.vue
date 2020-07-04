@@ -3,7 +3,7 @@
          :style="menuItemData.styles"
     >
         <a v-if="menuItemData.title && menuItemData.title.status"
-                :href="$helpers.adminUrlPrefix($store.getters.locale) + menuItemData.url"
+                :href="$helpers[menuItemData.prefix + 'UrlPrefix']($store.getters.locale) + menuItemData.url"
                 :class="menuItemData.title.classes"
                 :style="menuItemData.title.styles"
             >
@@ -39,6 +39,7 @@
                         id: 1,
                         classes: 'text-uppercase',
                         url: '/',
+                        prefix: 'admin',
                         title: {
                             classes: '',
                             status: 0,
