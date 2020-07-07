@@ -14,6 +14,6 @@ Route::prefix(app()->getLocale())
     ->group(function () {
         Route::fallback(function ($url) {
             return resolve(\Vegacms\Cms\Http\Controllers\Front\PageController::class)->page('/' . $url);
-        });    });
+        });
 
 });

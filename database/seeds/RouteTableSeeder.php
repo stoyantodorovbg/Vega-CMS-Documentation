@@ -46,11 +46,65 @@ class RouteTableSeeder extends Seeder
             'front'
         );
 
-        // Documentation home page
-        $this->createRoute('/documentation',
+        // Documentation getting started page
+        $this->createRoute('/getting-started',
             'get',
-            'DocumentationController@home',
-            'documentation-home',
+            'DocumentationController@gettingStarted',
+            'documentation-getting-started',
+            'web',
+            'front'
+        );
+
+        // Documentation localization page
+        $this->createRoute('/localization',
+            'get',
+            'DocumentationController@localization',
+            'documentation-localization',
+            'web',
+            'front'
+        );
+
+        // Documentation routing page
+        $this->createRoute('/routing',
+            'get',
+            'DocumentationController@routing',
+            'documentation-routing',
+            'web',
+            'front'
+        );
+
+        // Documentation authorization page
+        $this->createRoute('/authorization',
+            'get',
+            'DocumentationController@authorization',
+            'documentation-authorization',
+            'web',
+            'front'
+        );
+
+        // Documentation translations page
+        $this->createRoute('/translations',
+            'get',
+            'DocumentationController@translations',
+            'documentation-translations',
+            'web',
+            'front'
+        );
+
+        // Documentation menus page
+        $this->createRoute('/menus',
+            'get',
+            'DocumentationController@menus',
+            'documentation-menus',
+            'web',
+            'front'
+        );
+
+        // Documentation pages page
+        $this->createRoute('/pages',
+            'get',
+            'DocumentationController@pages',
+            'documentation-pages',
             'web',
             'front'
         );
