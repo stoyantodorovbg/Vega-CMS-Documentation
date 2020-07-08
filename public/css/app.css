@@ -20941,13 +20941,68 @@ section {
   padding-bottom: 2rem;
 }
 
-.documentation-main-nav {
+.documentation-pages {
+  min-width: 100%;
+}
+
+.documentation-pages .content {
+  min-height: 85rem;
+  display: flex;
+  justify-content: center;
+  background: gainsboro;
+}
+
+.documentation-pages .content h1 {
+  font-weight: bold;
+  font-size: 7rem;
+  margin-top: 7rem;
+  color: maroon;
+}
+
+.documentation-pages .content h1 span {
+  font-weight: bolder;
+}
+
+.documentation-pages .footer {
+  max-height: 3rem;
+  background: navajowhite;
+  font-size: 1.5rem;
+  color: green;
+  text-align: right;
+  padding: 0.5rem;
+}
+
+.documentation-pages .footer p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 760px) {
+  .documentation-pages .content {
+    min-width: 100%;
+  }
+
+  .documentation-pages .content h1 {
+    font-size: 4rem;
+  }
+
+  .documentation-pages .footer {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .documentation-pages .content h1 {
+    font-size: 3rem;
+  }
+}
+
+.home-main-nav {
   background: #282828;
   height: auto;
   padding-top: 3rem;
 }
 
-.documentation-main-nav .nav-item a {
+.home-main-nav .nav-item a {
   padding: 4rem;
   color: skyblue;
   font-size: 2rem;
@@ -20956,9 +21011,105 @@ section {
 }
 
 @media (max-width: 760px) {
-  .documentation-main-nav .nav-item {
+  .home-main-nav .nav-item {
     width: 100%;
     text-align: center;
+  }
+}
+
+.documentation-home-sidebar {
+  background: beige;
+}
+
+@media (max-width: 760px) {
+  .documentation-home-sidebar {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    min-height: 100%;
+    flex: 100%;
+  }
+}
+
+.documentation-home-sidebar .documentation-side-nav {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.documentation-home-sidebar .documentation-side-nav div {
+  padding: 0.7rem 0.5rem 0.5rem 0.8rem;
+  font-size: 1.6rem;
+}
+
+.documentation-home-sidebar .documentation-side-nav div a {
+  color: saddlebrown;
+  font-weight: bold;
+}
+
+@media (max-width: 760px) {
+  .documentation-home-sidebar .documentation-side-nav {
+    display: block;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+
+  .documentation-home-sidebar .documentation-side-nav div {
+    display: inline-block;
+    padding: 0.4rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .documentation-home-sidebar .documentation-side-nav {
+    max-width: 100%;
+    text-align: center;
+    padding-top: 0.7rem;
+    padding-bottom: 0.2rem;
+  }
+
+  .documentation-home-sidebar .documentation-side-nav div {
+    display: block;
+    padding: 0;
+    font-size: 1.2rem;
+  }
+}
+
+.documentation-home-main-nav .documentation-main-nav {
+  justify-content: flex-start;
+  left: 17%;
+  padding: 0;
+}
+
+.documentation-home-main-nav .documentation-main-nav div {
+  margin-right: 4rem;
+  text-transform: uppercase;
+}
+
+.documentation-home-main-nav .documentation-main-nav div a {
+  color: #A52A2A;
+  font-weight: bolder;
+}
+
+@media (max-width: 760px) {
+  .documentation-home-main-nav .documentation-main-nav {
+    left: 1%;
+  }
+
+  .documentation-home-main-nav .documentation-main-nav div {
+    margin-right: 3rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .documentation-home-main-nav .documentation-main-nav {
+    left: 2%;
+  }
+
+  .documentation-home-main-nav .documentation-main-nav div {
+    margin-right: 0.8rem;
+    font-size: 1.1rem;
   }
 }
 

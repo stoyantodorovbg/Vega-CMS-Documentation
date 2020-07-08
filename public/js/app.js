@@ -3106,6 +3106,7 @@ __webpack_require__.r(__webpack_exports__);
           id: 1,
           classes: 'text-uppercase',
           url: '/',
+          prefix: 'admin',
           title: {
             classes: '',
             status: 0,
@@ -84062,8 +84063,9 @@ var render = function() {
               style: _vm.menuItemData.title.styles,
               attrs: {
                 href:
-                  _vm.$helpers.adminUrlPrefix(_vm.$store.getters.locale) +
-                  _vm.menuItemData.url
+                  _vm.$helpers[_vm.menuItemData.prefix + "UrlPrefix"](
+                    _vm.$store.getters.locale
+                  ) + _vm.menuItemData.url
               }
             },
             [
@@ -84168,8 +84170,9 @@ var render = function() {
               style: _vm.menuItemData.title.styles,
               attrs: {
                 href:
-                  _vm.$helpers.adminUrlPrefix(_vm.$store.getters.locale) +
-                  _vm.menuItemData.url
+                  _vm.$helpers[_vm.menuItemData.prefix + "UrlPrefix"](
+                    _vm.$store.getters.locale
+                  ) + _vm.menuItemData.url
               }
             },
             [
@@ -100529,6 +100532,9 @@ __webpack_require__.r(__webpack_exports__);
 var helpers = {
   adminUrlPrefix: function adminUrlPrefix(locale) {
     return '/admin/' + locale;
+  },
+  frontUrlPrefix: function frontUrlPrefix(locale) {
+    return '/' + locale;
   },
   processStyles: function processStyles(stylesData) {
     var styles = '';
