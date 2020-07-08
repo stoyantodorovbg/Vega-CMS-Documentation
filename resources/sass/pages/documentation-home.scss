@@ -1,4 +1,4 @@
-.documentation-home-page {
+.documentation-pages {
     min-width: 100%;
 
     .content {
@@ -33,8 +33,23 @@
     }
 
     @media (max-width: 760px) {
+        .content {
+            min-width: 100%;
+
+            h1 {
+                font-size: 4rem;
+            }
+        }
         .footer {
             font-size: 1.2rem;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .content {
+            h1 {
+                font-size: 3rem;
+            }
         }
     }
 }

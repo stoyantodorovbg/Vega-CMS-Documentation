@@ -69,4 +69,12 @@ class DocumentationController extends Controller
     {
         return view('front.documentation.pages');
     }
+
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function testing()
+    {
+        return view('front.documentation.testing');
+    }
 }

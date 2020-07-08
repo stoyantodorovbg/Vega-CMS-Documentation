@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Seeder;
 use Vegacms\Cms\Models\Menu;
+use Illuminate\Database\Seeder;
 use Vegacms\Cms\Models\MenuItem;
 
 class HomeMainMenuSeeder extends Seeder

@@ -4,7 +4,7 @@ use Vegacms\Cms\Models\Menu;
 use Illuminate\Database\Seeder;
 use Vegacms\Cms\Models\MenuItem;
 
-class DocumentationSideMenuSeeder extends Seeder
+class DocumentationMainMenuSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,15 +13,15 @@ class DocumentationSideMenuSeeder extends Seeder
      */
     public function run()
     {
-        // Menu ID 3
-        if($menu = Menu::find(3)) {
+        // Menu ID 4
+        if($menu = Menu::find(4)) {
             $menu->delete();
-            MenuItem::where('menu_id', 3)->delete();
+            MenuItem::where('menu_id', 4)->delete();
         }
-        // Documentation Side Navigation
+        // Main navigation - home
         $menu = factory(Menu::class)->create([
             'title' => json_encode([
-                'text' => 'Vegacms CMS - Documentation Side Menu',
+                'text' => 'Vegacms CMS - Ducumentation Main Menu',
                 'status' => 0,
                 'classes' => 'nav-title',
                 'styles' => [],
@@ -42,7 +42,7 @@ class DocumentationSideMenuSeeder extends Seeder
                 ],
             ]),
             'description' => json_encode([
-                'text' => 'Main menu',
+                'text' => 'Documentation Main menu',
                 'status' => 0,
                 'classes' => '',
                 'styles' => [],
@@ -63,11 +63,11 @@ class DocumentationSideMenuSeeder extends Seeder
                 ],
             ]),
             'status' => 1,
-            'classes' => 'documentation-side-nav',
+            'classes' => 'navbar documentation-main-nav',
             'styles' => json_encode([]),
         ]);
 
-        $menu->id = 3;
+        $menu->id = 4;
         $menu->save();
 
         // Documentation main navigation - menu items
@@ -75,9 +75,9 @@ class DocumentationSideMenuSeeder extends Seeder
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
-            'url' => '/getting-started',
+            'url' => '/',
             'title' => json_encode([
-                'text' => 'Getting Started',
+                'text' => 'Home',
                 'status' => 1,
                 'classes' => '',
                 'styles' => [],
@@ -119,7 +119,7 @@ class DocumentationSideMenuSeeder extends Seeder
                 ],
             ]),
             'prefix' => 'front',
-            'classes' => '',
+            'classes' => 'nav-item',
             'styles' => json_encode([]),
         ]);
 
@@ -127,9 +127,61 @@ class DocumentationSideMenuSeeder extends Seeder
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
-            'url' => '/localization',
+            'url' => '/documentation',
             'title' => json_encode([
-                'text' => 'Localization',
+                'text' => 'Documentation',
+                'status' => 1,
+                'classes' => '',
+                'styles' => [],
+                'structure' => [
+                    'text' => [
+                        'type' => 'text'
+                    ],
+                    'status' => [
+                        'type' => 'text'
+                    ],
+                    'classes' => [
+                        'type' => 'text'
+                    ],
+                    'styles' => [
+                        'type' => 'json',
+                        'nested' => [],
+                    ],
+                ],
+            ]),
+            'description' => json_encode([
+                'text' => '',
+                'status' => 0,
+                'classes' => '',
+                'styles' => [],
+                'structure' => [
+                    'text' => [
+                        'type' => 'text'
+                    ],
+                    'status' => [
+                        'type' => 'text'
+                    ],
+                    'classes' => [
+                        'type' => 'text'
+                    ],
+                    'styles' => [
+                        'type' => 'json',
+                        'nested' => [],
+                    ],
+                ],
+            ]),
+            'prefix' => 'front',
+            'classes' => 'nav-item',
+            'styles' => json_encode([]),
+        ]);
+
+        factory(MenuItem::class)->create([
+            'menu_id' => $menu->id,
+            'parent_id' => null,
+            'status' => 1,
+            'url' => '/news',
+            'title' => json_encode([
+                'text' => 'News',
                 'status' => 1,
                 'classes' => '',
                 'styles',
@@ -171,7 +223,7 @@ class DocumentationSideMenuSeeder extends Seeder
                 ],
             ]),
             'prefix' => 'front',
-            'classes' => '',
+            'classes' => 'nav-item',
             'styles' => json_encode([]),
         ]);
 
@@ -179,9 +231,9 @@ class DocumentationSideMenuSeeder extends Seeder
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
-            'url' => '/routing',
+            'url' => '/about',
             'title' => json_encode([
-                'text' => 'Routing',
+                'text' => 'About',
                 'status' => 1,
                 'classes' => '',
                 'styles' => [],
@@ -222,8 +274,7 @@ class DocumentationSideMenuSeeder extends Seeder
                     ],
                 ],
             ]),
-            'prefix' => 'front',
-            'classes' => '',
+            'classes' => 'nav-item',
             'styles' => json_encode([]),
         ]);
 
@@ -231,61 +282,9 @@ class DocumentationSideMenuSeeder extends Seeder
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
-            'url' => '/authorization',
+            'url' => '/contacts',
             'title' => json_encode([
-                'text' => 'Authorization',
-                'status' => 1,
-                'classes' => '',
-                'styles',
-                'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
-                ],
-            ]),
-            'description' => json_encode([
-                'text' => '',
-                'status' => 0,
-                'classes' => '',
-                'styles' => [],
-                'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
-                ],
-            ]),
-            'prefix' => 'front',
-            'classes' => '',
-            'styles' => json_encode([]),
-        ]);
-
-        factory(MenuItem::class)->create([
-            'menu_id' => $menu->id,
-            'parent_id' => null,
-            'status' => 1,
-            'url' => '/translations',
-            'title' => json_encode([
-                'text' => 'Translations',
+                'text' => 'Contacts',
                 'status' => 1,
                 'classes' => '',
                 'styles',
@@ -327,163 +326,7 @@ class DocumentationSideMenuSeeder extends Seeder
                 ],
             ]),
             'prefix' => 'front',
-            'classes' => '',
-            'styles' => json_encode([]),
-        ]);
-
-        factory(MenuItem::class)->create([
-            'menu_id' => $menu->id,
-            'parent_id' => null,
-            'status' => 1,
-            'url' => '/menus',
-            'title' => json_encode([
-                'text' => 'Menus',
-                'status' => 1,
-                'classes' => '',
-                'styles',
-                'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
-                ],
-            ]),
-            'description' => json_encode([
-                'text' => '',
-                'status' => 0,
-                'classes' => '',
-                'styles' => [],
-                'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
-                ],
-            ]),
-            'prefix' => 'front',
-            'classes' => '',
-            'styles' => json_encode([]),
-        ]);
-
-        factory(MenuItem::class)->create([
-            'menu_id' => $menu->id,
-            'parent_id' => null,
-            'status' => 1,
-            'url' => '/pages',
-            'title' => json_encode([
-                'text' => 'Pages',
-                'status' => 1,
-                'classes' => '',
-                'styles',
-                'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
-                ],
-            ]),
-            'description' => json_encode([
-                'text' => '',
-                'status' => 0,
-                'classes' => '',
-                'styles' => [],
-                'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
-                ],
-            ]),
-            'prefix' => 'front',
-            'classes' => '',
-            'styles' => json_encode([]),
-        ]);
-
-        factory(MenuItem::class)->create([
-            'menu_id' => $menu->id,
-            'parent_id' => null,
-            'status' => 1,
-            'url' => '/testing',
-            'title' => json_encode([
-                'text' => 'Testing',
-                'status' => 1,
-                'classes' => '',
-                'styles' => [],
-                'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
-                ],
-            ]),
-            'description' => json_encode([
-                'text' => '',
-                'status' => 0,
-                'classes' => '',
-                'styles' => [],
-                'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
-                ],
-            ]),
-            'prefix' => 'front',
-            'classes' => '',
+            'classes' => 'nav-item',
             'styles' => json_encode([]),
         ]);
     }

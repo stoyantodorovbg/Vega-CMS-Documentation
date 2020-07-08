@@ -1,0 +1,35 @@
+.documentation-home-main-nav {
+    .documentation-main-nav {
+        justify-content: flex-start;
+        left: 17%;
+        padding: 0;
+
+        div {
+            margin-right: 4rem;
+            text-transform: uppercase;
+
+            a {
+                color: #A52A2A;
+                font-weight: bolder;
+            }
+        }
+
+        @media (max-width: 760px) {
+            left: 1%;
+
+            div {
+                margin-right: 3rem;
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 500px) {
+            left: 2%;
+
+            div {
+                margin-right: 0.8rem;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}

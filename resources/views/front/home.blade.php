@@ -5,7 +5,7 @@
         <div>
             <dynamic-menu :menu_id="2"></dynamic-menu>
         </div>
-        <h1 class="title">Vega CMS</h1>
+        <h1 class="title">Vega CMS<span> 1.7.5</span></h1>
         <article class="description">
             <p>
                 Vega CMS is build on top of Laravel. It's designed to facilitate the work of developers providing ready - made basic functionalities such as:
