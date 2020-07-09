@@ -23,8 +23,6 @@
                 <li>Automated tests</li>
             </ul>
         </article>
-        <footer class="footer">
-            <p>Vega CMS is open-sourced software licensed under the MIT license.</p>
-        </footer>
+        @include('front.partials.footer')
     </div>
 @endsection

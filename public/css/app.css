@@ -20947,20 +20947,39 @@ section {
 
 .documentation-pages .content {
   min-height: 85rem;
-  display: flex;
-  justify-content: center;
   background: gainsboro;
+  color: maroon;
 }
 
 .documentation-pages .content h1 {
+  text-align: center;
   font-weight: bold;
   font-size: 7rem;
   margin-top: 7rem;
-  color: maroon;
 }
 
 .documentation-pages .content h1 span {
   font-weight: bolder;
+}
+
+.documentation-pages .content h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 4rem 0 2rem 3rem;
+}
+
+.documentation-pages .content p {
+  margin-left: 7rem;
+  font-size: 1.8rem;
+}
+
+.documentation-pages .content .command {
+  font-size: 2rem;
+  margin-left: 5rem;
+}
+
+.documentation-pages .content .new-paragraph {
+  margin-top: 5rem;
 }
 
 .documentation-pages .footer {
@@ -20976,7 +20995,7 @@ section {
   margin-bottom: 0;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .documentation-pages .content {
     min-width: 100%;
   }
@@ -20985,14 +21004,22 @@ section {
     font-size: 4rem;
   }
 
+  .documentation-pages .content h2 {
+    font-size: 2.5rem;
+  }
+
   .documentation-pages .footer {
     font-size: 1.2rem;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
   .documentation-pages .content h1 {
     font-size: 3rem;
+  }
+
+  .documentation-pages .content h2 {
+    font-size: 2rem;
   }
 }
 
@@ -21010,7 +21037,7 @@ section {
   text-transform: uppercase;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .home-main-nav .nav-item {
     width: 100%;
     text-align: center;
@@ -21021,7 +21048,7 @@ section {
   background: beige;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .documentation-home-sidebar {
     display: block;
     max-width: 100%;
@@ -21038,7 +21065,7 @@ section {
 
 .documentation-home-sidebar .documentation-side-nav div {
   padding: 0.7rem 0.5rem 0.5rem 0.8rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .documentation-home-sidebar .documentation-side-nav div a {
@@ -21046,7 +21073,13 @@ section {
   font-weight: bold;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 992px) {
+  .documentation-home-sidebar .documentation-side-nav div {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
   .documentation-home-sidebar .documentation-side-nav {
     display: block;
     padding-top: 0.2rem;
@@ -21060,7 +21093,7 @@ section {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
   .documentation-home-sidebar .documentation-side-nav {
     max-width: 100%;
     text-align: center;
@@ -21076,6 +21109,8 @@ section {
 }
 
 .documentation-home-main-nav .documentation-main-nav {
+  z-index: 1;
+  background: gainsboro;
   justify-content: flex-start;
   left: 17%;
   padding: 0;
@@ -21091,7 +21126,7 @@ section {
   font-weight: bolder;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .documentation-home-main-nav .documentation-main-nav {
     left: 1%;
   }
@@ -21102,7 +21137,7 @@ section {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
   .documentation-home-main-nav .documentation-main-nav {
     left: 2%;
   }

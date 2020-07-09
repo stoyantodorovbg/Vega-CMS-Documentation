@@ -17,6 +17,14 @@ class DocumentationController extends Controller
     /**
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
+    public function requirements()
+    {
+        return view('front.documentation.requirements');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function gettingStarted()
     {
         return view('front.documentation.getting-started');

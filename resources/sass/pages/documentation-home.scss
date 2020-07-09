@@ -3,41 +3,84 @@
 
     .content {
         min-height: 85rem;
-        display: flex;
-        justify-content: center;
         background: gainsboro;
+        color: maroon;
 
         h1 {
+            text-align: center;
             font-weight: bold;
             font-size: 7rem;
             margin-top: 7rem;
-            color: maroon;
 
             span {
                 font-weight: bolder;
             }
         }
+
+        h2 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin: 4rem 0 2rem 3rem;
+        }
+
+        h3 {
+            font-size: 2.5rem;
+            font-weight: normal;
+            margin: 4rem 0 2rem 5rem;
+        }
+
+        p {
+            margin-left: 7rem;
+            font-size: 1.8rem;
+
+            .url-text {
+                font-family: Courier, monospace;
+            }
+
+            .email {
+                font-family: Arial, Helvetica, sans-serif;
+                font-style: italic;
+            }
+
+            .password {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bolder;
+            }
+        }
+
+        .command {
+            font-size: 2rem;
+            margin-left: 5rem;
+        }
+
+        .new-paragraph {
+            margin-top: 5rem;
+        }
     }
 
     .footer {
         max-height: 3rem;
-        background: navajowhite;
+        background: gainsboro;
         font-size: 1.5rem;
         color: green;
         text-align: right;
         padding: 0.5rem;
 
         p {
-            margin-bottom: 0;
+            margin: 0 2rem 0 0;
         }
     }
 
-    @media (max-width: 760px) {
+    @media (max-width: 768px) {
         .content {
             min-width: 100%;
 
             h1 {
                 font-size: 4rem;
+            }
+
+            h2 {
+                font-size: 2.5rem;
             }
         }
         .footer {
@@ -45,10 +88,14 @@
         }
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 576px) {
         .content {
             h1 {
                 font-size: 3rem;
+            }
+
+            h2 {
+                font-size: 2rem;
             }
         }
     }

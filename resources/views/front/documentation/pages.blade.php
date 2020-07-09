@@ -14,13 +14,15 @@
                         </div>
                     </div>
                 </div>
-                <h1>Pages</h1>
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Pages</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    @include('front.partials.footer')
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <footer class="col-12 footer">
-                <p>Vega CMS is open-sourced software licensed under the MIT license.</p>
-            </footer>
         </div>
     </div>
 @endsection

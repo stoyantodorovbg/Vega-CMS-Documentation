@@ -126,6 +126,15 @@ class RouteTableSeeder extends Seeder
             'web',
             'front'
         );
+
+        // Requirements page
+        $this->createRoute('/requirements',
+            'get',
+            'DocumentationController@requirements',
+            'documentation-requirements',
+            'web',
+            'front'
+        );
     }
 
     /**

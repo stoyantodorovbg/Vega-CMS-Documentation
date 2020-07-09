@@ -36,4 +36,5 @@ Route::prefix(app()->getLocale())
     Route::get('/menus', 'Front\DocumentationController@menus')->name('documentation-menus');
     Route::get('/pages', 'Front\DocumentationController@pages')->name('documentation-pages');
     Route::get('/testing', 'Front\DocumentationController@testing')->name('documentation-testing');
+    Route::get('/requirements', 'Front\DocumentationController@requirements')->name('documentation-requirements');
 });

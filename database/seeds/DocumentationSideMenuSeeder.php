@@ -26,19 +26,10 @@ class DocumentationSideMenuSeeder extends Seeder
                 'classes' => 'nav-title',
                 'styles' => [],
                 'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
+                    'text' => ['type' => 'text'],
+                    'status' => ['type' => 'text'],
+                    'classes' => ['type' => 'text'],
+                    'styles' => ['type' => 'json', 'nested' => []],
                 ],
             ]),
             'description' => json_encode([
@@ -47,19 +38,10 @@ class DocumentationSideMenuSeeder extends Seeder
                 'classes' => '',
                 'styles' => [],
                 'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
+                    'text' => ['type' => 'text'],
+                    'status' => ['type' => 'text'],
+                    'classes' => ['type' => 'text'],
+                    'styles' => ['type' => 'json', 'nested' => []],
                 ],
             ]),
             'status' => 1,
@@ -75,26 +57,17 @@ class DocumentationSideMenuSeeder extends Seeder
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
-            'url' => '/getting-started',
+            'url' => '/requirements',
             'title' => json_encode([
-                'text' => 'Getting Started',
+                'text' => 'Requirements',
                 'status' => 1,
                 'classes' => '',
                 'styles' => [],
                 'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
+                    'text' => ['type' => 'text'],
+                    'status' => ['type' => 'text'],
+                    'classes' => ['type' => 'text'],
+                    'styles' => ['type' => 'json', 'nested' => []],
                 ],
             ]),
             'description' => json_encode([
@@ -103,19 +76,45 @@ class DocumentationSideMenuSeeder extends Seeder
                 'classes' => '',
                 'styles' => [],
                 'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
+                    'text' => ['type' => 'text'],
+                    'status' => ['type' => 'text'],
+                    'classes' => ['type' => 'text'],
+                    'styles' => ['type' => 'json', 'nested' => []],
+                ],
+            ]),
+            'prefix' => 'front',
+            'classes' => '',
+            'styles' => json_encode([]),
+        ]);
+
+        // Documentation main navigation - menu items
+        factory(MenuItem::class)->create([
+            'menu_id' => $menu->id,
+            'parent_id' => null,
+            'status' => 1,
+            'url' => '/getting-started',
+            'title' => json_encode([
+                'text' => 'Getting Started',
+                'status' => 1,
+                'classes' => '',
+                'styles' => [],
+                'structure' => [
+                    'text' => ['type' => 'text'],
+                    'status' => ['type' => 'text'],
+                    'classes' => ['type' => 'text'],
+                    'styles' => ['type' => 'json', 'nested' => []],
+                ],
+            ]),
+            'description' => json_encode([
+                'text' => '',
+                'status' => 0,
+                'classes' => '',
+                'styles' => [],
+                'structure' => [
+                    'text' => ['type' => 'text'],
+                    'status' => ['type' => 'text'],
+                    'classes' => ['type' => 'text'],
+                    'styles' => ['type' => 'json', 'nested' => []],
                 ],
             ]),
             'prefix' => 'front',
@@ -134,19 +133,10 @@ class DocumentationSideMenuSeeder extends Seeder
                 'classes' => '',
                 'styles',
                 'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
+                    'text' => ['type' => 'text'],
+                    'status' => ['type' => 'text'],
+                    'classes' => ['type' => 'text'],
+                    'styles' => ['type' => 'json', 'nested' => []],
                 ],
             ]),
             'description' => json_encode([
@@ -155,19 +145,10 @@ class DocumentationSideMenuSeeder extends Seeder
                 'classes' => '',
                 'styles' => [],
                 'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
+                    'text' => ['type' => 'text'],
+                    'status' => ['type' => 'text'],
+                    'classes' => ['type' => 'text'],
+                    'styles' => ['type' => 'json', 'nested' => []],
                 ],
             ]),
             'prefix' => 'front',
@@ -186,19 +167,10 @@ class DocumentationSideMenuSeeder extends Seeder
                 'classes' => '',
                 'styles' => [],
                 'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
+                    'text' => ['type' => 'text'],
+                    'status' => ['type' => 'text'],
+                    'classes' => ['type' => 'text'],
+                    'styles' => ['type' => 'json', 'nested' => []],
                 ],
             ]),
             'description' => json_encode([
@@ -207,19 +179,10 @@ class DocumentationSideMenuSeeder extends Seeder
                 'classes' => '',
                 'styles' => [],
                 'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
+                    'text' => ['type' => 'text'],
+                    'status' => ['type' => 'text'],
+                    'classes' => ['type' => 'text'],
+                    'styles' => ['type' => 'json', 'nested' => []],
                 ],
             ]),
             'prefix' => 'front',
@@ -238,19 +201,10 @@ class DocumentationSideMenuSeeder extends Seeder
                 'classes' => '',
                 'styles',
                 'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
+                    'text' => ['type' => 'text'],
+                    'status' => ['type' => 'text'],
+                    'classes' => ['type' => 'text'],
+                    'styles' => ['type' => 'json', 'nested' => []],
                 ],
             ]),
             'description' => json_encode([
@@ -259,19 +213,10 @@ class DocumentationSideMenuSeeder extends Seeder
                 'classes' => '',
                 'styles' => [],
                 'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
+                    'text' => ['type' => 'text'],
+                    'status' => ['type' => 'text'],
+                    'classes' => ['type' => 'text'],
+                    'styles' => ['type' => 'json', 'nested' => []],
                 ],
             ]),
             'prefix' => 'front',
@@ -290,19 +235,10 @@ class DocumentationSideMenuSeeder extends Seeder
                 'classes' => '',
                 'styles',
                 'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
+                    'text' => ['type' => 'text'],
+                    'status' => ['type' => 'text'],
+                    'classes' => ['type' => 'text'],
+                    'styles' => ['type' => 'json', 'nested' => []],
                 ],
             ]),
             'description' => json_encode([
@@ -311,19 +247,10 @@ class DocumentationSideMenuSeeder extends Seeder
                 'classes' => '',
                 'styles' => [],
                 'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
+                    'text' => ['type' => 'text'],
+                    'status' => ['type' => 'text'],
+                    'classes' => ['type' => 'text'],
+                    'styles' => ['type' => 'json', 'nested' => []],
                 ],
             ]),
             'prefix' => 'front',
@@ -342,19 +269,10 @@ class DocumentationSideMenuSeeder extends Seeder
                 'classes' => '',
                 'styles',
                 'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
+                    'text' => ['type' => 'text'],
+                    'status' => ['type' => 'text'],
+                    'classes' => ['type' => 'text'],
+                    'styles' => ['type' => 'json', 'nested' => []],
                 ],
             ]),
             'description' => json_encode([
@@ -363,19 +281,10 @@ class DocumentationSideMenuSeeder extends Seeder
                 'classes' => '',
                 'styles' => [],
                 'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
+                    'text' => ['type' => 'text'],
+                    'status' => ['type' => 'text'],
+                    'classes' => ['type' => 'text'],
+                    'styles' => ['type' => 'json', 'nested' => []],
                 ],
             ]),
             'prefix' => 'front',
@@ -394,19 +303,10 @@ class DocumentationSideMenuSeeder extends Seeder
                 'classes' => '',
                 'styles',
                 'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
+                    'text' => ['type' => 'text'],
+                    'status' => ['type' => 'text'],
+                    'classes' => ['type' => 'text'],
+                    'styles' => ['type' => 'json', 'nested' => []],
                 ],
             ]),
             'description' => json_encode([
@@ -415,19 +315,10 @@ class DocumentationSideMenuSeeder extends Seeder
                 'classes' => '',
                 'styles' => [],
                 'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
+                    'text' => ['type' => 'text'],
+                    'status' => ['type' => 'text'],
+                    'classes' => ['type' => 'text'],
+                    'styles' => ['type' => 'json', 'nested' => []],
                 ],
             ]),
             'prefix' => 'front',
@@ -446,19 +337,10 @@ class DocumentationSideMenuSeeder extends Seeder
                 'classes' => '',
                 'styles' => [],
                 'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
+                    'text' => ['type' => 'text'],
+                    'status' => ['type' => 'text'],
+                    'classes' => ['type' => 'text'],
+                    'styles' => ['type' => 'json', 'nested' => []],
                 ],
             ]),
             'description' => json_encode([
@@ -467,19 +349,10 @@ class DocumentationSideMenuSeeder extends Seeder
                 'classes' => '',
                 'styles' => [],
                 'structure' => [
-                    'text' => [
-                        'type' => 'text'
-                    ],
-                    'status' => [
-                        'type' => 'text'
-                    ],
-                    'classes' => [
-                        'type' => 'text'
-                    ],
-                    'styles' => [
-                        'type' => 'json',
-                        'nested' => [],
-                    ],
+                    'text' => ['type' => 'text'],
+                    'status' => ['type' => 'text'],
+                    'classes' => ['type' => 'text'],
+                    'styles' => ['type' => 'json', 'nested' => []],
                 ],
             ]),
             'prefix' => 'front',
