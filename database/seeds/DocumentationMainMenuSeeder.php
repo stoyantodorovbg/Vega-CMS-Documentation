@@ -75,7 +75,7 @@ class DocumentationMainMenuSeeder extends Seeder
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
-            'url' => '/',
+            'url' => '',
             'title' => json_encode([
                 'text' => 'Home',
                 'status' => 1,
@@ -127,7 +127,7 @@ class DocumentationMainMenuSeeder extends Seeder
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
-            'url' => '/documentation',
+            'url' => 'documentation',
             'title' => json_encode([
                 'text' => 'Documentation',
                 'status' => 1,
@@ -179,7 +179,7 @@ class DocumentationMainMenuSeeder extends Seeder
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
-            'url' => '/news',
+            'url' => 'news',
             'title' => json_encode([
                 'text' => 'News',
                 'status' => 1,
@@ -231,7 +231,7 @@ class DocumentationMainMenuSeeder extends Seeder
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
-            'url' => '/about',
+            'url' => 'about',
             'title' => json_encode([
                 'text' => 'About',
                 'status' => 1,
@@ -282,7 +282,7 @@ class DocumentationMainMenuSeeder extends Seeder
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
-            'url' => '/contacts',
+            'url' => 'contacts',
             'title' => json_encode([
                 'text' => 'Contacts',
                 'status' => 1,

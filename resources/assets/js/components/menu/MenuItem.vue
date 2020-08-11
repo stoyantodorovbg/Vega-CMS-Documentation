@@ -39,7 +39,6 @@
                         id: 1,
                         classes: 'text-uppercase',
                         url: '/',
-                        prefix: 'admin',
                         title: {
                             classes: '',
                             status: 0,

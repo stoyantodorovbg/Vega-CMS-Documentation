@@ -34,7 +34,9 @@ class RouteTableSeeder extends Seeder
             'HomeController@index',
             'main-home',
             'web',
-            'front'
+            'front',
+            '',
+            '\App\Http\Controllers\Front\\'
         );
 
         // Documentation home page
@@ -43,7 +45,9 @@ class RouteTableSeeder extends Seeder
             'DocumentationController@home',
             'documentation-home',
             'web',
-            'front'
+            'front',
+            '',
+            '\App\Http\Controllers\Front\\'
         );
 
         // Documentation getting started page
@@ -52,7 +56,9 @@ class RouteTableSeeder extends Seeder
             'DocumentationController@gettingStarted',
             'documentation-getting-started',
             'web',
-            'front'
+            'front',
+            '',
+            '\App\Http\Controllers\Front\\'
         );
 
         // Documentation localization page
@@ -61,7 +67,9 @@ class RouteTableSeeder extends Seeder
             'DocumentationController@localization',
             'documentation-localization',
             'web',
-            'front'
+            'front',
+            '',
+            '\App\Http\Controllers\Front\\'
         );
 
         // Documentation routing page
@@ -70,7 +78,9 @@ class RouteTableSeeder extends Seeder
             'DocumentationController@routing',
             'documentation-routing',
             'web',
-            'front'
+            'front',
+            '',
+            '\App\Http\Controllers\Front\\'
         );
 
         // Documentation authorization page
@@ -79,7 +89,9 @@ class RouteTableSeeder extends Seeder
             'DocumentationController@authorization',
             'documentation-authorization',
             'web',
-            'front'
+            'front',
+            '',
+            '\App\Http\Controllers\Front\\'
         );
 
         // Documentation translations page
@@ -88,7 +100,9 @@ class RouteTableSeeder extends Seeder
             'DocumentationController@translations',
             'documentation-translations',
             'web',
-            'front'
+            'front',
+            '',
+            '\App\Http\Controllers\Front\\'
         );
 
         // Documentation menus page
@@ -97,7 +111,9 @@ class RouteTableSeeder extends Seeder
             'DocumentationController@menus',
             'documentation-menus',
             'web',
-            'front'
+            'front',
+            '',
+            '\App\Http\Controllers\Front\\'
         );
 
         // Documentation pages page
@@ -106,7 +122,9 @@ class RouteTableSeeder extends Seeder
             'DocumentationController@pages',
             'documentation-pages',
             'web',
-            'front'
+            'front',
+            '',
+            '\App\Http\Controllers\Front\\'
         );
 
         // Documentation pages page
@@ -115,7 +133,9 @@ class RouteTableSeeder extends Seeder
             'DocumentationController@pages',
             'documentation-pages',
             'web',
-            'front'
+            'front',
+            '',
+            '\App\Http\Controllers\Front\\'
         );
 
         // Testing pages page
@@ -124,7 +144,9 @@ class RouteTableSeeder extends Seeder
             'DocumentationController@testing',
             'documentation-testing',
             'web',
-            'front'
+            'front',
+            '',
+            '\App\Http\Controllers\Front\\'
         );
 
         // Requirements page
@@ -133,7 +155,9 @@ class RouteTableSeeder extends Seeder
             'DocumentationController@requirements',
             'documentation-requirements',
             'web',
-            'front'
+            'front',
+            '',
+            '\App\Http\Controllers\Front\\'
         );
     }
 
@@ -147,6 +171,7 @@ class RouteTableSeeder extends Seeder
      * @param string $routeType
      * @param string $actionType
      * @param string $groupName
+     * @param string $controllerNamespace
      */
     protected function createRoute(string $url,
                                    string $method,
@@ -154,7 +179,8 @@ class RouteTableSeeder extends Seeder
                                    string $name,
                                    string $routeType,
                                    string $actionType,
-                                   string $groupName = ''
+                                   string $groupName = '',
+                                   string $controllerNamespace = ''
     ): void {
         if(!Route::where('name', $name)->first()) {
             $routes = $this->routeService->getRoutes();
@@ -166,6 +192,7 @@ class RouteTableSeeder extends Seeder
                     'name' => $name,
                     'route_type' => $routeType,
                     'action_type' => $actionType,
+                    'controller_namespace' => $controllerNamespace,
                 ]);
 
                 if($groupName) {

@@ -57,7 +57,7 @@ class DocumentationSideMenuSeeder extends Seeder
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
-            'url' => '/requirements',
+            'url' => 'requirements',
             'title' => json_encode([
                 'text' => 'Requirements',
                 'status' => 1,
@@ -92,7 +92,7 @@ class DocumentationSideMenuSeeder extends Seeder
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
-            'url' => '/getting-started',
+            'url' => 'getting-started',
             'title' => json_encode([
                 'text' => 'Getting Started',
                 'status' => 1,
@@ -126,7 +126,7 @@ class DocumentationSideMenuSeeder extends Seeder
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
-            'url' => '/localization',
+            'url' => 'localization',
             'title' => json_encode([
                 'text' => 'Localization',
                 'status' => 1,
@@ -160,7 +160,7 @@ class DocumentationSideMenuSeeder extends Seeder
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
-            'url' => '/routing',
+            'url' => 'routing',
             'title' => json_encode([
                 'text' => 'Routing',
                 'status' => 1,
@@ -194,7 +194,7 @@ class DocumentationSideMenuSeeder extends Seeder
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
-            'url' => '/authorization',
+            'url' => 'authorization',
             'title' => json_encode([
                 'text' => 'Authorization',
                 'status' => 1,
@@ -228,7 +228,7 @@ class DocumentationSideMenuSeeder extends Seeder
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
-            'url' => '/translations',
+            'url' => 'translations',
             'title' => json_encode([
                 'text' => 'Translations',
                 'status' => 1,
@@ -262,7 +262,7 @@ class DocumentationSideMenuSeeder extends Seeder
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
-            'url' => '/menus',
+            'url' => 'menus',
             'title' => json_encode([
                 'text' => 'Menus',
                 'status' => 1,
@@ -296,7 +296,7 @@ class DocumentationSideMenuSeeder extends Seeder
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
-            'url' => '/pages',
+            'url' => 'pages',
             'title' => json_encode([
                 'text' => 'Pages',
                 'status' => 1,
@@ -330,7 +330,7 @@ class DocumentationSideMenuSeeder extends Seeder
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
-            'url' => '/testing',
+            'url' => 'testing',
             'title' => json_encode([
                 'text' => 'Testing',
                 'status' => 1,
