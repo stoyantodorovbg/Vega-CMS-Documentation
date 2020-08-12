@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 mr-5 ml-5">
                         <h1>Getting Started</h1>
                         <h2>Installation:</h2>
                         <p>Vega CMS is made to integrate with Laravel.</p>

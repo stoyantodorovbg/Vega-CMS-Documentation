@@ -20,17 +20,16 @@
         h2 {
             font-size: 3.5rem;
             font-weight: bold;
-            margin: 4rem 0 2rem 3rem;
+            margin: 4rem 0 2rem 0;
         }
 
         h3 {
             font-size: 2.5rem;
             font-weight: normal;
-            margin: 4rem 0 2rem 5rem;
+            margin: 4rem 0 2rem 0;
         }
 
         p {
-            margin-left: 7rem;
             font-size: 1.8rem;
 
             .url-text {
@@ -46,6 +45,11 @@
                 font-family: Arial, Helvetica, sans-serif;
                 font-weight: bolder;
             }
+        }
+
+        pre {
+            background: lightgray;
+            padding: 3rem;
         }
 
         .command {
