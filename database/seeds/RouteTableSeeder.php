@@ -33,10 +33,10 @@ class RouteTableSeeder extends Seeder
             'get',
             'HomeController@index',
             'main-home',
-            'web',
+            'vega-web',
             'front',
             '',
-            '\App\Http\Controllers\Front\\'
+            '\App\Http\Controllers\\'
         );
 
         // Documentation home page
@@ -44,10 +44,10 @@ class RouteTableSeeder extends Seeder
             'get',
             'DocumentationController@home',
             'documentation-home',
-            'web',
+            'vega-web',
             'front',
             '',
-            '\App\Http\Controllers\Front\\'
+            '\App\Http\Controllers\\'
         );
 
         // Documentation getting started page
@@ -55,10 +55,10 @@ class RouteTableSeeder extends Seeder
             'get',
             'DocumentationController@gettingStarted',
             'documentation-getting-started',
-            'web',
+            'vega-web',
             'front',
             '',
-            '\App\Http\Controllers\Front\\'
+            '\App\Http\Controllers\\'
         );
 
         // Documentation localization page
@@ -66,10 +66,10 @@ class RouteTableSeeder extends Seeder
             'get',
             'DocumentationController@localization',
             'documentation-localization',
-            'web',
+            'vega-web',
             'front',
             '',
-            '\App\Http\Controllers\Front\\'
+            '\App\Http\Controllers\\'
         );
 
         // Documentation routing page
@@ -77,10 +77,10 @@ class RouteTableSeeder extends Seeder
             'get',
             'DocumentationController@routing',
             'documentation-routing',
-            'web',
+            'vega-web',
             'front',
             '',
-            '\App\Http\Controllers\Front\\'
+            '\App\Http\Controllers\\'
         );
 
         // Documentation authorization page
@@ -88,10 +88,10 @@ class RouteTableSeeder extends Seeder
             'get',
             'DocumentationController@authorization',
             'documentation-authorization',
-            'web',
+            'vega-web',
             'front',
             '',
-            '\App\Http\Controllers\Front\\'
+            '\App\Http\Controllers\\'
         );
 
         // Documentation translations page
@@ -99,10 +99,10 @@ class RouteTableSeeder extends Seeder
             'get',
             'DocumentationController@translations',
             'documentation-translations',
-            'web',
+            'vega-web',
             'front',
             '',
-            '\App\Http\Controllers\Front\\'
+            '\App\Http\Controllers\\'
         );
 
         // Documentation menus page
@@ -110,10 +110,10 @@ class RouteTableSeeder extends Seeder
             'get',
             'DocumentationController@menus',
             'documentation-menus',
-            'web',
+            'vega-web',
             'front',
             '',
-            '\App\Http\Controllers\Front\\'
+            '\App\Http\Controllers\\'
         );
 
         // Documentation pages page
@@ -121,10 +121,10 @@ class RouteTableSeeder extends Seeder
             'get',
             'DocumentationController@pages',
             'documentation-pages',
-            'web',
+            'vega-web',
             'front',
             '',
-            '\App\Http\Controllers\Front\\'
+            '\App\Http\Controllers\\'
         );
 
         // Documentation pages page
@@ -132,10 +132,10 @@ class RouteTableSeeder extends Seeder
             'get',
             'DocumentationController@pages',
             'documentation-pages',
-            'web',
+            'vega-web',
             'front',
             '',
-            '\App\Http\Controllers\Front\\'
+            '\App\Http\Controllers\\'
         );
 
         // Testing pages page
@@ -143,10 +143,10 @@ class RouteTableSeeder extends Seeder
             'get',
             'DocumentationController@testing',
             'documentation-testing',
-            'web',
+            'vega-web',
             'front',
             '',
-            '\App\Http\Controllers\Front\\'
+            '\App\Http\Controllers\\'
         );
 
         // Requirements page
@@ -154,10 +154,10 @@ class RouteTableSeeder extends Seeder
             'get',
             'DocumentationController@requirements',
             'documentation-requirements',
-            'web',
+            'vega-web',
             'front',
             '',
-            '\App\Http\Controllers\Front\\'
+            '\App\Http\Controllers\\'
         );
     }
 
