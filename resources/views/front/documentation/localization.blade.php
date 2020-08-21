@@ -17,16 +17,16 @@
                 <div class="row">
                     <div class="col-12 mr-5 ml-5">
                         <h1>Localization</h1>
-                        <p>Locales data can be managed though the Administration.</p>
+                        <p>Locales data can be managed though Administration.</p>
                         <img src="{{ asset('storage/documentation-screenshots/locales/admin-edit-locale.png') }}"
-                             alt="locales-widget-language" class="w-75"
+                             alt="admin-edit-locale" class="w-75"
                         >
                         <h2>Language:</h2>
                         <p>It is displayed on the select box.</p>
                         <img src="{{ asset('storage/documentation-screenshots/locales/locales-languages.png') }}"
                              alt="locales-widget-language" class="w-25"
                         >
-                        <p class="mt-2">Only the active locales are added to this select box.</p>
+                        <p class="mt-2">Only the active locales are added to it.</p>
                         <h2>URL Code</h2>
                         <p>Locale code is set through the cms.php config file that is published.
                             It has correspond to the locale code field set though the Administration.

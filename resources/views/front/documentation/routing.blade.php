@@ -26,7 +26,7 @@
                         <h2>Create Route through Administration.</h2>
                         <p>The form receives data in a format like this:</p>
                         <img src="{{ asset('storage/documentation-screenshots/routes/admin-create-route.png') }}"
-                             alt="locales-widget-language" class="w-75"
+                             alt="admin-create-route" class="w-75"
                         >
                         <h2>Create Route through the console</h2>
                         <p>This line creates an exemplary route:</p>
@@ -34,7 +34,7 @@
                                 php artisan generate:route /example-route get ExampleController@index front.example-route vega-web front \App\Http\Controllers\\
                             </code></p>
                         <p>Last three parameters are optional.</p>
-                        <h2>Create Route through DB seeder</h2>
+                        <h2 id="create-route-through-db-seeder">Create Route through DB seeder</h2>
                         <p>It's the recommended way for those who have enough knowledge to use php code.</p>
                         <pre>
 use Vegacms\Cms\Models\Group;
@@ -134,6 +134,12 @@ class RouteTableSeeder extends Seeder
 }
 
                         </pre>
+                        <h2>URL Prefix</h2>
+                        <p>A prefix to all routes could be added. It is described in
+                            <a href="{{ route('documentation-localization') }}">localization</a> section.</p>
+                        <h2>Authorization</h2>
+                        <p>It is provided by middlewares. There is more information in
+                            <a href="{{ route('documentation-authorization') }}">authorization</a> section.</p>
                     </div>
                 </div>
                 <div class="row">
