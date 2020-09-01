@@ -65,4 +65,18 @@ abstract class VegaCmsTestCase extends BaseTestCase
                 break;
         }
     }
+
+    /**
+     * Get url prefix from config file
+     *
+     * @return string
+     */
+    protected function localeUrlPrefix()
+    {
+        if (config('cms.locales.codes')[0]) {
+            return '/' . app()->getLocale();
+        }
+
+        return '';
+    }
 }

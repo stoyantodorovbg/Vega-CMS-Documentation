@@ -42,7 +42,7 @@ class Moderators extends Middleware
                 return response()->json(['error' => 'Unauthenticated.'], 401);
             }
 
-            return redirect(route('welcome', [], false));
+            return redirect(route('login', [], false));
         }
 
         return $next($request);
