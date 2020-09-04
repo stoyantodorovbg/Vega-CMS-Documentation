@@ -119,6 +119,41 @@
                         <p>Add such method in <strong>App\Traits\DataRepositoryTrait</strong> in order to process the data you need.
                             Don't forget that <strong>derived-select-input</strong> component expects data for the options that renders in the same format as <strong>parent-select-input</strong>.
                         </p>
+                        <h2>Services</h2>
+                        <h3>EloquentFilterService</h3>
+                        <pre>
+public function addFilters(Request $request, string $model): Builder;
+                        </pre>
+                        <p>The Request have contains these parameters:</p>
+                        <pre>
+'filters' => 'json',
+'items_per_page' => 'required|integer|between:1,100',
+                        </pre>
+                        <p><strong>filters</strong> have to be in such format:</p>
+<pre>
+{"name":{"types":{"like":{"value":"a"}}}}"
+</pre>
+                        <p><strong>name</strong> is the filtered field.</p>
+                        <p><strong>like</strong> is the filtering method.</p>
+                        <p>To <strong>value</strong> assign the value by which you are filtering.</p>
+                        <p>The available filtering methods are:</p>
+                        <p><strong>exact</strong> it is equivalent to <strong>=</strong> SQL operator</p>
+                        <p><strong>like</strong> it is equivalent to <strong>like</strong> SQL operator</p>
+                        <p><strong>greaterThen</strong> it is equivalent to <strong>></strong> SQL operator</p>
+                        <p><strong>lessThen</strong> it is equivalent to <strong><</strong> SQL operator</p>
+                        <p><strong>whereHasMany</strong> filters by a field from related model - <strong>whereHas eloquent method</strong>.
+                            When use this method <string>filters</string>have to be in format like this:</p>
+                        <pre>
+{"name":{"types":{"whereHasMany":{"value":{"relationMethod":"users","value":"UserName"}}}}"
+                        </pre>
+                        <h3>FileCreateService</h3>
+                        <pre>
+public function createFile(string $folderPath, string $fileName, string $fileExtension, string $stubPath, $capitalize = true);
+                        </pre>
+                        <h3>FileDestroyService</h3>
+                        <pre>
+public function destroyFile(string $folderPath, string $fileName, string $fileExtension): bool;
+                        </pre>
                     </div>
                 </div>
                 <div class="row">
