@@ -20965,17 +20965,16 @@ section {
 .documentation-pages .content h2 {
   font-size: 3.5rem;
   font-weight: bold;
-  margin: 4rem 0 2rem 3rem;
+  margin: 4rem 0 2rem 0;
 }
 
 .documentation-pages .content h3 {
   font-size: 2.5rem;
   font-weight: normal;
-  margin: 4rem 0 2rem 5rem;
+  margin: 4rem 0 2rem 0;
 }
 
 .documentation-pages .content p {
-  margin-left: 7rem;
   font-size: 1.8rem;
 }
 
@@ -20991,6 +20990,12 @@ section {
 .documentation-pages .content p .password {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
+}
+
+.documentation-pages .content pre {
+  background: lightgray;
+  padding: 3rem;
+  margin-right: 5rem;
 }
 
 .documentation-pages .content .command {
