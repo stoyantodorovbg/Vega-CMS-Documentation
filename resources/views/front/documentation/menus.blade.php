@@ -26,7 +26,7 @@
                         >
                         <p class="mt-3">The data from this from renders this menu:</p>
                         <img src="{{ asset('storage/documentation-screenshots/menus/menu-html.png') }}"
-                             alt="menu HTML" class="w-525"
+                             alt="menu HTML" class="w-75"
                         >
                         <p class="mt-3">When title and description are activated the rendered HTML looks like this:</p>
                         <img src="{{ asset('storage/documentation-screenshots/menus/menu-html-active-title-description.png') }}"

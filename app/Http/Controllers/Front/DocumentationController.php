@@ -85,4 +85,9 @@ class DocumentationController extends Controller
     {
         return view('front.documentation.testing');
     }
+
+    public function utilities()
+    {
+        return view('front.documentation.utilities');
+    }
 }

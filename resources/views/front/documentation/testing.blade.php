@@ -17,6 +17,14 @@
                 <div class="row">
                     <div class="col-12 mr-5 ml-5">
                         <h1>Testing</h1>
+                        <p>If you want to run Vega CMS tests on your application, should integrate them with the command:</p>
+                        <p><code class="command">php artisan integrate:vegacms-cms-testing</code></p>
+                        <p>So</p>
+                        <p><code class="command">phpunit vendor/vegacms/cms/tests</code></p>
+                        <p>runs Vega CMS tests</p>
+                        <p>As Vega CMS has functionalities that write into php files, if some tests fail it could cause changes into php files.
+                            When testing Vega CMS use version control system to track any changes.
+                        </p>
                     </div>
                 </div>
                 <div class="row">

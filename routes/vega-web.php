@@ -59,5 +59,9 @@ foreach(config('cms.locales.codes', []) as $code) {
 			Route::get('/testing', '\App\Http\Controllers\Front\DocumentationController@testing')->name('documentation-testing');
 
 			Route::get('/requirements', '\App\Http\Controllers\Front\DocumentationController@requirements')->name('documentation-requirements');
+
+			Route::get('/useful-functionalities', '\App\Http\Controllers\Front\DocumentationController@usefulFunctionalities')->name('documentation-useful-functionalities');
+
+			Route::get('/utilities', '\App\Http\Controllers\Front\DocumentationController@utilities')->name('documentation-utilities');
 		});
 }

@@ -159,6 +159,17 @@ class RouteTableSeeder extends Seeder
             '',
             '\App\Http\Controllers\\'
         );
+
+        // Utilities page
+        $this->createRoute('/utilities',
+            'get',
+            'DocumentationController@utilities',
+            'documentation-utilities',
+            'vega-web',
+            'front',
+            '',
+            '\App\Http\Controllers\\'
+        );
     }
 
     /**
