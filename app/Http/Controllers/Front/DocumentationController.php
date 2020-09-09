@@ -7,6 +7,8 @@ use App\Http\Controllers\Controller;
 class DocumentationController extends Controller
 {
     /**
+     * Documentation home page
+     *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function home()
@@ -15,6 +17,8 @@ class DocumentationController extends Controller
     }
 
     /**
+     * Documentation requirements page
+     *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function requirements()
@@ -23,6 +27,8 @@ class DocumentationController extends Controller
     }
 
     /**
+     * Documentation gettingStarted page
+     *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function gettingStarted()
@@ -31,6 +37,8 @@ class DocumentationController extends Controller
     }
 
     /**
+     * Documentation localization page
+     *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function localization()
@@ -39,6 +47,8 @@ class DocumentationController extends Controller
     }
 
     /**
+     * Documentation routing page
+     *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function routing()
@@ -47,6 +57,8 @@ class DocumentationController extends Controller
     }
 
     /**
+     * Documentation authorization page
+     *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function authorization()
@@ -55,6 +67,8 @@ class DocumentationController extends Controller
     }
 
     /**
+     * Documentation translations page
+     *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function translations()
@@ -63,6 +77,8 @@ class DocumentationController extends Controller
     }
 
     /**
+     * Documentation menus page
+     *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function menus()
@@ -71,6 +87,8 @@ class DocumentationController extends Controller
     }
 
     /**
+     * Documentation pages page
+     *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function pages()
@@ -79,6 +97,8 @@ class DocumentationController extends Controller
     }
 
     /**
+     * Documentation testing page
+     *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function testing()
@@ -86,6 +106,11 @@ class DocumentationController extends Controller
         return view('front.documentation.testing');
     }
 
+    /**
+     * Documentation utilities page
+     *
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function utilities()
     {
         return view('front.documentation.utilities');

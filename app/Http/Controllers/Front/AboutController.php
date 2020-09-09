@@ -4,15 +4,15 @@ namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
 
-class HomeController extends Controller
+class AboutController extends Controller
 {
     /**
-     * Home index page
+     * About index page
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index()
     {
-        return view('front.home');
+        return view('front.about');
     }
 }

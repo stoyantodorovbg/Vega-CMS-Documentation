@@ -39,6 +39,39 @@ class RouteTableSeeder extends Seeder
             '\App\Http\Controllers\\'
         );
 
+        // Main news page
+        $this->createRoute('/news',
+            'get',
+            'NewsController@index',
+            'main-news',
+            'vega-web',
+            'front',
+            '',
+            '\App\Http\Controllers\\'
+        );
+
+        // Main about page
+        $this->createRoute('/about',
+            'get',
+            'AboutController@index',
+            'main-about',
+            'vega-web',
+            'front',
+            '',
+            '\App\Http\Controllers\\'
+        );
+
+        // Main contacts page
+        $this->createRoute('/contacts',
+            'get',
+            'ContactsController@index',
+            'main-contacts',
+            'vega-web',
+            'front',
+            '',
+            '\App\Http\Controllers\\'
+        );
+
         // Documentation home page
         $this->createRoute('/documentation',
             'get',

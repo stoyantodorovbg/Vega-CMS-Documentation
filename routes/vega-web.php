@@ -63,5 +63,11 @@ foreach(config('cms.locales.codes', []) as $code) {
 			Route::get('/useful-functionalities', '\App\Http\Controllers\Front\DocumentationController@usefulFunctionalities')->name('documentation-useful-functionalities');
 
 			Route::get('/utilities', '\App\Http\Controllers\Front\DocumentationController@utilities')->name('documentation-utilities');
+
+			Route::get('/news', '\App\Http\Controllers\Front\NewsController@index')->name('main-news');
+
+			Route::get('/about', '\App\Http\Controllers\Front\AboutController@index')->name('main-about');
+
+			Route::get('/contacts', '\App\Http\Controllers\Front\ContactsController@index')->name('main-contacts');
 		});
 }
