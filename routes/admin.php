@@ -129,5 +129,17 @@ foreach (config('cms.locales.codes') as $code) {
             Route::get('/index', '\Vegacms\Cms\Http\Controllers\Admin\IndexController@data')->name('admin-models.index')->middleware('admins');
 
             Route::delete('/destroy', '\Vegacms\Cms\Http\Controllers\Admin\DeleteController@destroy')->name('admin-models.destroy')->middleware('admins');
-        });
+
+			Route::get('/articles', '\App\Http\Controllers\Admin\ArticlesController@index')->name('admin-articles.index')->middleware('admins');
+
+			Route::get('/articles/create', '\App\Http\Controllers\Admin\ArticlesController@create')->name('admin-articles.create')->middleware('admins');
+
+			Route::get('/articles/{article}', '\App\Http\Controllers\Admin\ArticlesController@show')->name('admin-articles.show')->middleware('admins');
+
+			Route::post('/articles/store', '\App\Http\Controllers\Admin\ArticlesController@store')->name('admin-articles.store')->middleware('admins');
+
+			Route::get('/articles/{article}/edit', '\App\Http\Controllers\Admin\ArticlesController@edit')->name('admin-articles.edit')->middleware('admins');
+
+			Route::patch('/articles/{article}/update', '\App\Http\Controllers\Admin\ArticlesController@update')->name('admin-articles.update')->middleware('admins');
+		});
 }

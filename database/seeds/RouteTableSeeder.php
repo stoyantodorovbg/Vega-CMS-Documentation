@@ -203,6 +203,72 @@ class RouteTableSeeder extends Seeder
             '',
             '\App\Http\Controllers\\'
         );
+
+        // Admin articles index
+        $this->createRoute('/articles',
+            'get',
+            'ArticlesController@index',
+            'admin-articles.index',
+            'admin',
+            'admin',
+            'admins',
+            '\App\Http\Controllers\\'
+        );
+
+        // Admin articles create
+        $this->createRoute('/articles/create',
+            'get',
+            'ArticlesController@create',
+            'admin-articles.create',
+            'admin',
+            'admin',
+            'admins',
+            '\App\Http\Controllers\\'
+        );
+
+        // Admin articles show
+        $this->createRoute('/articles/{article}',
+            'get',
+            'ArticlesController@show',
+            'admin-articles.show',
+            'admin',
+            'admin',
+            'admins',
+            '\App\Http\Controllers\\'
+        );
+
+        // Admin articles store
+        $this->createRoute('/articles/store',
+            'post',
+            'ArticlesController@store',
+            'admin-articles.store',
+            'admin',
+            'admin',
+            'admins',
+            '\App\Http\Controllers\\'
+        );
+
+        // Admin articles edit
+        $this->createRoute('/articles/{article}/edit',
+            'get',
+            'ArticlesController@edit',
+            'admin-articles.edit',
+            'admin',
+            'admin',
+            'admins',
+            '\App\Http\Controllers\\'
+        );
+
+        // Admin articles update
+        $this->createRoute('/articles/{article}/update',
+            'patch',
+            'ArticlesController@update',
+            'admin-articles.update',
+            'admin',
+            'admin',
+            'admins',
+            '\App\Http\Controllers\\'
+        );
     }
 
     /**
