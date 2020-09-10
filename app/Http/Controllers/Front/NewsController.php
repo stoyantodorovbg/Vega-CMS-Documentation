@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Front;
 
+use App\Models\Article;
 use App\Http\Controllers\Controller;
 
 class NewsController extends Controller
@@ -13,6 +14,8 @@ class NewsController extends Controller
      */
     public function index()
     {
-        return view('front.news');
+        return view('front.news', [
+            'articles' => Article::where('status', 1)->orderBy('created_at', 'desc')->get()
+        ]);
     }
 }

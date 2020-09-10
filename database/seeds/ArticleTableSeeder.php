@@ -12,6 +12,10 @@ class ArticleTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(Article::class, 3)->create();
+        factory(Article::class)->create([
+            'title' => 'Vega CMS Documentation',
+            'sub_title' => '',
+            'content' => 'Vega CMS usage guide is now available.',
+        ]);
     }
 }
