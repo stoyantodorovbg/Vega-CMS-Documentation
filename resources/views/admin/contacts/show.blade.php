@@ -5,14 +5,14 @@
         <div class="col-12 pr-4 pt-2">
             <div class="mb-3 mt-1">
                 <button-link :prop_data="{
-                    'url': '{{ route('admin-articles.index') }}',
-                    'text': '{{ phrase('buttons.all_articles') }}',
+                    'url': '{{ route('admin-contacts.index') }}',
+                    'text': '{{ phrase('buttons.all_contacts') }}',
                     'htmlClass': 'btn btn-main float-right m-1 text-capitalize'
                 }"
                 ></button-link>
                 <button-link :prop_data="{
-                    'url': '{{ route('admin-articles.edit', $article->getSlug()) }}',
-                    'text': '{{ phrase('buttons.edit_article') }}',
+                    'url': '{{ route('admin-contacts.edit', $contact->getSlug()) }}',
+                    'text': '{{ phrase('buttons.edit_contact') }}',
                     'htmlClass': 'btn btn-danger float-right m-1 text-capitalize'
                 }"
                 ></button-link>
@@ -28,31 +28,27 @@
                     <tbody>
                     <tr>
                         <th>{{ phrase('labels.id') }}</th>
-                        <td>{{ $article->id }}</td>
+                        <td>{{ $contact->id }}</td>
                     </tr>
                     <tr>
                         <th class="text-capitalize">{{ phrase('labels.title') }}</th>
-                        <td>{{ $article->title }}</td>
+                        <td>{{ $contact->title }}</td>
                     </tr>
                     <tr>
-                        <th class="text-capitalize">{{ phrase('labels.sub_title') }}</th>
-                        <td>{{ $article->sub_title }}</td>
+                        <th class="text-capitalize">{{ phrase('labels.email') }}</th>
+                        <td>{{ $contact->email }}</td>
                     </tr>
                     <tr>
                         <th class="text-capitalize">{{ phrase('labels.content') }}</th>
-                        <td>{{ $article->content }}</td>
-                    </tr>
-                    <tr>
-                        <th class="text-capitalize">{{ phrase('labels.status') }}</th>
-                        <td>{{ $article->status }}</td>
+                        <td>{{ $contact->content }}</td>
                     </tr>
                     <tr>
                         <th class="text-capitalize">{{ phrase('labels.created_at') }}</th>
-                        <td>{{ $article->created_at }}</td>
+                        <td>{{ $contact->created_at }}</td>
                     </tr>
                     <tr>
                         <th class="text-capitalize">{{ phrase('labels.updated_at') }}</th>
-                        <td>{{ $article->updated_at }}</td>
+                        <td>{{ $contact->updated_at }}</td>
                     </tr>
                     </tbody>
                 </table>

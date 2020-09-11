@@ -69,5 +69,7 @@ foreach(config('cms.locales.codes', []) as $code) {
 			Route::get('/about', '\App\Http\Controllers\Front\AboutController@index')->name('main-about');
 
 			Route::get('/contacts', '\App\Http\Controllers\Front\ContactsController@index')->name('main-contacts');
+
+			Route::post('/contacts/store', '\App\Http\Controllers\Front\ContactsController@store')->name('front-contacts.store');
 		});
 }

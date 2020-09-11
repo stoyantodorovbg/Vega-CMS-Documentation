@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-12">
                 @foreach($articles as $article)
-                    <article class="description">
+                    <article class="description pt-5 pb-5">
                         <h2 class="text-uppercase font-weight-bold mt-2">{{ $article->title }}</h2>
                         @if($article->sub_title)
                             <h3 class="font-italic">{{ $article->sub_title }}</h3>

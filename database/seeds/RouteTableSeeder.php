@@ -61,17 +61,6 @@ class RouteTableSeeder extends Seeder
             '\App\Http\Controllers\\'
         );
 
-        // Main contacts page
-        $this->createRoute('/contacts',
-            'get',
-            'ContactsController@index',
-            'main-contacts',
-            'vega-web',
-            'front',
-            '',
-            '\App\Http\Controllers\\'
-        );
-
         // Documentation home page
         $this->createRoute('/documentation',
             'get',
@@ -267,6 +256,94 @@ class RouteTableSeeder extends Seeder
             'admin',
             'admin',
             'admins',
+            '\App\Http\Controllers\\'
+        );
+
+        // Admin contacts index
+        $this->createRoute('/contacts',
+            'get',
+            'ContactsController@index',
+            'admin-contacts.index',
+            'admin',
+            'admin',
+            'admins',
+            '\App\Http\Controllers\\'
+        );
+
+        // Admin contacts create
+        $this->createRoute('/contacts/create',
+            'get',
+            'ContactsController@create',
+            'admin-contacts.create',
+            'admin',
+            'admin',
+            'admins',
+            '\App\Http\Controllers\\'
+        );
+
+        // Admin contacts show
+        $this->createRoute('/contacts/{contact}',
+            'get',
+            'ContactsController@show',
+            'admin-contacts.show',
+            'admin',
+            'admin',
+            'admins',
+            '\App\Http\Controllers\\'
+        );
+
+        // Admin contacts store
+        $this->createRoute('/contacts/store',
+            'post',
+            'ContactsController@store',
+            'admin-contacts.store',
+            'admin',
+            'admin',
+            'admins',
+            '\App\Http\Controllers\\'
+        );
+
+        // Admin contacts edit
+        $this->createRoute('/contacts/{contact}/edit',
+            'get',
+            'ContactsController@edit',
+            'admin-contacts.edit',
+            'admin',
+            'admin',
+            'admins',
+            '\App\Http\Controllers\\'
+        );
+
+        // Admin contacts update
+        $this->createRoute('/contacts/{contact}/update',
+            'patch',
+            'ContactsController@update',
+            'admin-contacts.update',
+            'admin',
+            'admin',
+            'admins',
+            '\App\Http\Controllers\\'
+        );
+
+        // Main contacts page
+        $this->createRoute('/contacts',
+            'get',
+            'ContactsController@index',
+            'main-contacts',
+            'vega-web',
+            'front',
+            '',
+            '\App\Http\Controllers\\'
+        );
+
+        // Front contacts store
+        $this->createRoute('/contacts/store',
+            'post',
+            'ContactsController@store',
+            'front-contacts.store',
+            'vega-web',
+            'front',
+            '',
             '\App\Http\Controllers\\'
         );
     }

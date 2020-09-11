@@ -141,5 +141,17 @@ foreach (config('cms.locales.codes') as $code) {
 			Route::get('/articles/{article}/edit', '\App\Http\Controllers\Admin\ArticlesController@edit')->name('admin-articles.edit')->middleware('admins');
 
 			Route::patch('/articles/{article}/update', '\App\Http\Controllers\Admin\ArticlesController@update')->name('admin-articles.update')->middleware('admins');
+
+			Route::get('/contacts', '\App\Http\Controllers\Admin\ContactsController@index')->name('admin-contacts.index')->middleware('admins');
+
+			Route::get('/contacts/create', '\App\Http\Controllers\Admin\ContactsController@create')->name('admin-contacts.create')->middleware('admins');
+
+			Route::get('/contacts/{contact}', '\App\Http\Controllers\Admin\ContactsController@show')->name('admin-contacts.show')->middleware('admins');
+
+			Route::post('/contacts/store', '\App\Http\Controllers\Admin\ContactsController@store')->name('admin-contacts.store')->middleware('admins');
+
+			Route::get('/contacts/{contact}/edit', '\App\Http\Controllers\Admin\ContactsController@edit')->name('admin-contacts.edit')->middleware('admins');
+
+			Route::patch('/contacts/{contact}/update', '\App\Http\Controllers\Admin\ContactsController@update')->name('admin-contacts.update')->middleware('admins');
 		});
 }

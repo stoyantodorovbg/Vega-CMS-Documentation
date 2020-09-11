@@ -13,23 +13,44 @@ class PhraseButtonsTableSeeder extends Seeder
     public function run()
     {
         Phrase::create([
-            'system_name' => 'labels.show_article',
+            'system_name' => 'buttons.show_article',
             'text' => [
                 'en' => 'show article'
             ]
         ]);
 
         Phrase::create([
-            'system_name' => 'labels.edit_article',
+            'system_name' => 'buttons.edit_article',
             'text' => [
                 'en' => 'edit article'
             ]
         ]);
 
         Phrase::create([
-            'system_name' => 'labels.all_articles',
+            'system_name' => 'buttons.all_articles',
             'text' => [
                 'en' => 'all articles'
+            ]
+        ]);
+
+        Phrase::create([
+            'system_name' => 'buttons.edit_contact',
+            'text' => [
+                'en' => 'edit contact'
+            ]
+        ]);
+
+        Phrase::create([
+            'system_name' => 'buttons.all_contacts',
+            'text' => [
+                'en' => 'all contacts'
+            ]
+        ]);
+
+        Phrase::create([
+            'system_name' => 'buttons.show_contact',
+            'text' => [
+                'en' => 'show contact'
             ]
         ]);
     }
