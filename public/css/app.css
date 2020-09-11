@@ -20929,7 +20929,6 @@ section {
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 5rem;
-  padding-bottom: 10rem;
 }
 
 .home-page .footer {
@@ -20939,6 +20938,7 @@ section {
   padding-top: 5rem;
   padding-right: 3rem;
   padding-bottom: 2rem;
+  margin-top: 32rem;
 }
 
 .documentation-pages {
