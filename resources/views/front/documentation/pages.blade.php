@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 mr-5 ml-5">
+                    <div class="col-12">
                         <h1>Pages</h1>
                         <p>Vega CMS can renders pages from DB data.
                             Page data can be managed via Administration or DB seeder.</p>
@@ -54,8 +54,8 @@
                              alt="page container JSON structure" class="w-75 mt-3"
                         >
                         <h2>Manage page data via DB seeder</h2>
-                        <p>You can publish Vega Cms seeders reuse the code from PageTestTableSeeder to create your own pages.</p>
-                        <p><code class="command">php artisan vendor:publish --tag=vegacms-seeds</code></p>
+                        <p>You can publish Vega Cms seeders and reuse the code from PageTestTableSeeder to create your own pages.</p>
+                        <p class="mb-5 pb-5"><code class="command">php artisan vendor:publish --tag=vegacms-seeds</code></p>
 
 
                     </div>

@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 mr-5 ml-5">
+                    <div class="col-12">
                         <h1>Requirements</h1>
                         <h2>composer.json:</h2>
                         <h3>requires</h3>
@@ -54,7 +54,7 @@
                         <p>resolve-url-loader: ^3.1.0</p>
                         <p>sass: ^1.15.2</p>
                         <p>sass-loader: ^8.0.0</p>
-                        <p>cross-env: ^7.0</p>
+                        <p class="mb-5 pb-5">cross-env: ^7.0</p>
                     </div>
                 </div>
                 <div class="row">

@@ -11,7 +11,20 @@
                 <p class="description">If You want to contact us, please fill in the form.</p>
             </div>
             @if(session('status'))
-                <div class="col-12 text-center text-success">{{ session('status') }}</div>
+                <div class="col-12 text-success">
+                    <div class="ml-auto mr-auto w-50">
+                        {{ session('status') }}
+                    </div>
+                </div>
+            @endif
+            @if($errors->any())
+                <div class="col-12 text-danger">
+                    @foreach ($errors->all() as $error)
+                        <div class="ml-auto mr-auto w-50">
+                            {{ $error }}
+                        </div>
+                    @endforeach
+                </div>
             @endif
             <div class="col-6 ml-auto mr-auto">
                 <form method="POST" action="{{ route('front-contacts.store') }}">

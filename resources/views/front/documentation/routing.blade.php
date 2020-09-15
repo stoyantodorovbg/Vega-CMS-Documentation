@@ -15,13 +15,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 mr-5 ml-5">
+                    <div class="col-12">
                         <h1>Routing</h1>
-                        <p>Vega CMS provides automated process for creating routes.
-                            The route is added to files, where it is not recommended to write code manually.
-                            The route data is stored in DB. This make it possible to provide
+                        <p>Vega CMS provides automated routes creating process.
+                            This service adds routes to separate files. It is not recommended to write code manually into them.
+                            The route data is stored in DB. This provides
                             <a href="{{ route('documentation-localization') }}" >localization</a> and
-                            <a href="{{ route('documentation-authorization') }}" >authorization</a> functionality.</p>
+                            <a href="{{ route('documentation-authorization') }}" >authorization</a> functionalities.</p>
                         <p>There are three ways to add a route:</p>
                         <h2>Create Route through Administration.</h2>
                         <p>The form receives data in a format like this:</p>
@@ -29,13 +29,13 @@
                              alt="admin-create-route" class="w-75"
                         >
                         <h2>Create Route through the console</h2>
-                        <p>This line creates an exemplary route:</p>
+                        <p>Though line like this an exemplary route is created:</p>
                         <p><code class="command">
                                 php artisan generate:route /example-route get ExampleController@index front.example-route vega-web front \App\Http\Controllers\\
                             </code></p>
                         <p>Last three parameters are optional.</p>
                         <h2 id="create-route-through-db-seeder">Create Route through DB seeder</h2>
-                        <p>It's the recommended way for those who have enough knowledge to use php code.</p>
+                        <p>It's the recommended way for those who have enough knowledge to use PHP code.</p>
                         <pre>
 use Vegacms\Cms\Models\Group;
 use Vegacms\Cms\Models\Route;
@@ -138,7 +138,7 @@ class RouteTableSeeder extends Seeder
                         <p>A prefix to all routes could be added. It is described in
                             <a href="{{ route('documentation-localization') }}">localization</a> section.</p>
                         <h2>Authorization</h2>
-                        <p>It is provided by middlewares. There is more information in
+                        <p class="mb-5 pb-5">It is provided by middlewares. For more information see the
                             <a href="{{ route('documentation-authorization') }}">authorization</a> section.</p>
                     </div>
                 </div>

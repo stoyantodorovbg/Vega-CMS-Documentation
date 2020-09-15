@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 mr-5 ml-5">
+                    <div class="col-12">
                         <h1>Utilities</h1>
                         <h2>Admin Index Pages</h2>
                         <p>It is easy to display models data in the administration. This code renders users page:</p>
@@ -71,7 +71,7 @@
                              alt="JSON presenter" class="w-75"
                         >
                         <h2>Connected Select Boxes</h2>
-                        <p>When using Vega CMS you can easily add a select box witch options depends on the selected option in other select box.
+                        <p>When using Vega CMS you can easily add a select box witch options depend on the selected option in other select box.
                             Add Vue.js components like these in your template:</p>
                         <pre>
 {{ '
@@ -115,7 +115,7 @@
                             <strong>field_name</strong> key determines the model field that is used for filtering.</p>
                         <p><strong>selected_value</strong> is the value that will be searched.</p>
                         <p><strong>derived-input-data</strong> endpoint will call EloquentService class that will return Builder instance with the set filters.
-                        <p>After that form DataRepository class it will call a method in format <strong>modelNameData</strong> that have receives Builder instance and returns a Collection.</p>
+                        <p>After that through DataRepository class it will call a method in format <strong>modelNameData</strong> that receives Builder instance and returns a Collection.</p>
                         <p>Add such method in <strong>App\Traits\DataRepositoryTrait</strong> in order to process the data you need.
                             Don't forget that <strong>derived-select-input</strong> component expects data for the options that renders in the same format as <strong>parent-select-input</strong>.
                         </p>
@@ -124,7 +124,7 @@
                         <pre>
 public function addFilters(Request $request, string $model): Builder;
                         </pre>
-                        <p>The Request have contains these parameters:</p>
+                        <p>The Request instance have to contains these parameters:</p>
                         <pre>
 'filters' => 'json',
 'items_per_page' => 'required|integer|between:1,100',
@@ -141,8 +141,8 @@ public function addFilters(Request $request, string $model): Builder;
                         <p><strong>like</strong> it is equivalent to <strong>like</strong> SQL operator</p>
                         <p><strong>greaterThen</strong> it is equivalent to <strong>></strong> SQL operator</p>
                         <p><strong>lessThen</strong> it is equivalent to <strong><</strong> SQL operator</p>
-                        <p><strong>whereHasMany</strong> filters by a field from related model - <strong>whereHas eloquent method</strong>.
-                            When use this method <string>filters</string>have to be in format like this:</p>
+                        <p><strong>whereHasMany</strong> filters by a field from related model - <strong>whereHas Eloquent method</strong>.
+                            When use this method <string>filters</string> have to be in format like this:</p>
                         <pre>
 {"name":{"types":{"whereHasMany":{"value":{"relationMethod":"users","value":"UserName"}}}}"
                         </pre>

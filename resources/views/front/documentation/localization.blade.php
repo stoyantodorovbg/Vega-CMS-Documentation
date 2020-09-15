@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 mr-5 ml-5">
+                    <div class="col-12">
                         <h1>Localization</h1>
                         <p>Locales data can be managed though Administration.</p>
                         <img src="{{ asset('storage/documentation-screenshots/locales/admin-edit-locale.png') }}"
@@ -29,7 +29,7 @@
                         <p class="mt-2">Only the active locales are added to it.</p>
                         <h2>URL Code</h2>
                         <p>Locale code is set through the cms.php config file that is published.
-                            It has correspond to the locale code field set though the Administration.
+                            It corresponds to the locale code field that is set though the Administration.
                         </p>
                         <pre>
 'locales' => [
@@ -50,9 +50,9 @@
 ],
 </pre>
                         <h2>Front-End Widget</h2>
-                        <p>When there is at least one locale code set though the administration, this code adds the widget that changes the active site locale:</p>
+                        <p>When there is at least one locale code that is set though the administration, this code adds the widget that changes the active site locale:</p>
                         <pre>{{ '<change-locale></change-locale>' }}</pre>
-                        <p>It manages all locales which have active status.</p>
+                        <p class="mb-5 pb-5">It manages all active locales.</p>
                     </div>
                 </div>
                 <div class="row">

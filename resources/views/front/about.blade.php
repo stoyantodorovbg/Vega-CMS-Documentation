@@ -12,10 +12,10 @@
             </p>
             <ul>
                 <li>Administration user interface</li>
-                <li>Automated creation of routes with authorizations</li>
+                <li>Automated creation of routes and authorizations</li>
                 <li>Reusable model search service</li>
                 <li>File management services</li>
-                <li>Translation functionality with URL locales</li>
+                <li>Translation functionality and URL locales</li>
                 <li>Menu builder</li>
                 <li>Page builder</li>
                 <li>Smart data presentation through Vue.js components</li>

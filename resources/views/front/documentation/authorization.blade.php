@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-12">
                         <h1>Authorization</h1>
-                        <p>The authorization is provided by middlewares that are automatically added to routes.
+                        <p>The authorization is provided by middlewares which are automatically added to routes.
                             They are related to the user groups.
                             When a group is attached to route only its members can access it.
                         </p>
@@ -106,7 +106,7 @@ class GroupsTableSeeder extends Seeder
                         <p><code class="command">php artisan attach:route-to-group routeName groupTitle</code></p>
                         <p><code class="command">php artisan detach:route-from-group routeName groupTitle</code></p>
                         <h2>Attach/Detach Group to/from Route through DB seeder</h2>
-                        <p>It is presented on <a href="{{ route('documentation-routing') }}#create-route-through-db-seeder">routing</a> page</p>
+                        <p class="mb-5 pb-5">It is presented on <a href="{{ route('documentation-routing') }}#create-route-through-db-seeder">routing</a> page</p>
                     </div>
                 </div>
                 <div class="row">

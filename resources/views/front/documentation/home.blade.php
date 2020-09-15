@@ -16,7 +16,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <h1>Vega CMS 1.11.0</h1>
+                        <h1 class="vega-cms-home">Vega CMS 1.11.0</h1>
                     </div>
                 </div>
                 <div class="row">

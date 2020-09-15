@@ -1,10 +1,10 @@
 @extends('front.layouts.app')
-
 @section('content')
     <div class="container home-page">
         <div>
             <dynamic-menu :menu_id="2"></dynamic-menu>
         </div>
+
         <h1 class="title">Vega CMS<span> 1.11.0</span></h1>
         <div class="row">
             <div class="col-12">
