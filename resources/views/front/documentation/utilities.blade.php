@@ -61,7 +61,7 @@
                              alt="JSON input JSON field added" class="w-50 mt-2"
                         >
                         <h2>JSON Presenter</h2>
-                        <p>JSON data can be presented easily by JsonPresented Vue.js component:</p>
+                        <p>JSON data can be presented easily by JsonPresenter Vue.js component:</p>
                         <pre>
 {{
     '<json-presenter :json_data="{{ $menu->title } }"></json-presenter>'
@@ -102,9 +102,9 @@
 ></derived-select-input>
 ' }}
                         </pre>
-                        <p><strong>input_data</strong> name and id are the HTML attributes that both component render.</p>
-                        <p>Choose unique <strong>event_name</strong>. <strong>derived-select-input</strong> listens on the same event key.</p>
-                        <p>Send the available options as <strong>options</strong> key to <strong>parent-select-input</strong>.This data have to be Collection that contains such items:</p>
+                        <p><strong>input_data</strong> name and id are the HTML attributes that both components render.</p>
+                        <p>Choose unique <strong>event_name</strong>. <strong>DerivedSelectInput</strong> listens on the same event key.</p>
+                        <p>Send the available options as <strong>options</strong> key to <strong>ParentSelectInput</strong>.This data have to be Collection that contains such items:</p>
                         <pre>
 [
     'value' => $item->id,
@@ -117,7 +117,7 @@
                         <p><strong>derived-input-data</strong> endpoint will call EloquentService class that will return Builder instance with the set filters.
                         <p>After that through DataRepository class it will call a method in format <strong>modelNameData</strong> that receives Builder instance and returns a Collection.</p>
                         <p>Add such method in <strong>App\Traits\DataRepositoryTrait</strong> in order to process the data you need.
-                            Don't forget that <strong>derived-select-input</strong> component expects data for the options that renders in the same format as <strong>parent-select-input</strong>.
+                            <strong>DerivedSelectInput</strong> component expects data for the options that renders in the same format as <strong>ParentSelectInput</strong>.
                         </p>
                         <h2>Services</h2>
                         <h3>EloquentFilterService</h3>
@@ -135,14 +135,14 @@ public function addFilters(Request $request, string $model): Builder;
 </pre>
                         <p><strong>name</strong> is the filtered field.</p>
                         <p><strong>like</strong> is the filtering method.</p>
-                        <p>To <strong>value</strong> assign the value by which you are filtering.</p>
+                        <p>To <strong>value</strong> assigns the value by which you are filtering.</p>
                         <p>The available filtering methods are:</p>
                         <p><strong>exact</strong> it is equivalent to <strong>=</strong> SQL operator</p>
                         <p><strong>like</strong> it is equivalent to <strong>like</strong> SQL operator</p>
                         <p><strong>greaterThen</strong> it is equivalent to <strong>></strong> SQL operator</p>
                         <p><strong>lessThen</strong> it is equivalent to <strong><</strong> SQL operator</p>
                         <p><strong>whereHasMany</strong> filters by a field from related model - <strong>whereHas Eloquent method</strong>.
-                            When use this method <string>filters</string> have to be in format like this:</p>
+                            When use this method <strong>filters</strong> have to be in format like this:</p>
                         <pre>
 {"name":{"types":{"whereHasMany":{"value":{"relationMethod":"users","value":"UserName"}}}}"
                         </pre>

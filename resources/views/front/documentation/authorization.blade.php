@@ -17,9 +17,9 @@
                 <div class="row">
                     <div class="col-12">
                         <h1>Authorization</h1>
-                        <p>The authorization is provided by middlewares which are automatically added to routes.
+                        <p>The authorization is provided by middlewares which are automatically added to the routes.
                             They are related to the user groups.
-                            When a group is attached to route only its members can access it.
+                            When a group is attached to route, only its members can access it.
                         </p>
                         <h2>Create Group through Administration</h2>
                         <img src="{{ asset('storage/documentation-screenshots/groups/admin-form.png') }}"

@@ -25,28 +25,28 @@
                         <img src="{{ asset('storage/documentation-screenshots/pages/admin-page-form.png') }}"
                              alt="admin page form" class="w-75"
                         >
-                        <p class="mt-3">The Page content can be added through Containers.</p>
+                        <p class="mt-5">Page Containers add HTML tags.</p>
                         <img src="{{ asset('storage/documentation-screenshots/pages/page-containers-index.png') }}"
                              alt="page containers index" class="w-75"
                         >
-                        <p class="mt-3">Page Container can be nested into other Page Container. Its tag can be selected.
+                        <p class="mt-5">Page Container can be nested into other Page Container.
                             Only containers which have active status are rendered.</p>
                         <img src="{{ asset('storage/documentation-screenshots/pages/page-container-main-properties.png') }}"
                              alt="page container main properties" class="w-75"
                         >
-                        <p class="mt-3">Different kinds of HTML classes can be set to the container.</p>
+                        <p class="mt-5">Page Container has fields which manage its positioning through Bootstrap Grid. Also it has a field for additional HTML classes.</p>
                         <img src="{{ asset('storage/documentation-screenshots/pages/page-container-html-classes.png') }}"
                              alt="page container html classes" class="w-75"
                         >
-                        <p class="mt-3">The container has four JSON fields</p>
+                        <p class="mt-5">The container has four JSON fields</p>
                         <img src="{{ asset('storage/documentation-screenshots/pages/page-container-json-fields.png') }}"
                              alt="page container JSON fields" class="w-75"
                         >
-                        <p class="mt-3">Though them can be added settings like these:</p>
+                        <p class="mt-5">Though them can be added settings like these:</p>
                         <img src="{{ asset('storage/documentation-screenshots/pages/page-container-body.png') }}"
                              alt="page container body" class="w-75"
                         >
-                        <p class="mt-3">When JSON field is used nested HTML tags can be created.</p>
+                        <p class="mt-5">Use JSON field to create nested HTML tags.</p>
                         <img src="{{ asset('storage/documentation-screenshots/pages/page-container-add-json-key.png') }}"
                              alt="page container add JSON key" class="w-75"
                         >

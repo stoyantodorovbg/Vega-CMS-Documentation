@@ -19,16 +19,16 @@
                         <h1>Getting Started</h1>
                         <h2>Installation:</h2>
                         <p>Vega CMS is made to integrate with Laravel.</p>
-                        <p class="mt-5 pt-3">Vega CMS can be added to Laravel project through:</p>
+                        <p class="mt-5 pt-3">It can be added to Laravel project through:</p>
                         <p><code class="command">composer require vegacms/cms</code></p>
-                        <p>Next command creates some route files, migrates database, publishes JS and SCSS assets, installs front-end
+                        <p class="mt-5">Next command creates some route files, migrates database, publishes JS and SCSS assets, installs front-end
                             dependencies and runs npm watcher.
                         </p>
-                        <p class="mt-5 pt-3"><code class="command">php artisan integrate:vegacms-cms</code></p>
-                        <p>Vega CMS seeders are executed through the standard command. Don't forget to change the users passwords before uploading your
+                        <p><code class="command">php artisan integrate:vegacms-cms</code></p>
+                        <p class="mt-5">Vega CMS seeders are executed through the standard command. Don't forget to change the users passwords before uploading your
                             project on live server.</p>
-                        <p class="mt-5 pt-3"><code class="command">php artisan db:seed</code></p>
-                        <p class="mt-5 pt-5">
+                        <p><code class="command">php artisan db:seed</code></p>
+                        <p class="mt-5">
                             Vega CMS is accessible in the browser on <span class="url-text font-weight-bold">{your host}/en/login</span>.
                         </p>
                         <p class="mb-5 pb-5">

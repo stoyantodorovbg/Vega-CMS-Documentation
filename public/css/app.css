@@ -20945,10 +20945,14 @@ section {
   min-width: 100%;
 }
 
+.documentation-pages .vega-cms-home {
+  margin-bottom: 58rem;
+}
+
 .documentation-pages .content {
-  min-height: 85rem;
   background: gainsboro;
   color: maroon;
+  min-height: 73rem;
 }
 
 .documentation-pages .content h1 {
@@ -21014,6 +21018,9 @@ section {
   color: green;
   text-align: right;
   padding: 0.5rem;
+  margin-top: 52rem;
+  position: absolute;
+  bottom: 10px;
 }
 
 .documentation-pages .footer p {
@@ -21039,12 +21046,24 @@ section {
 }
 
 @media (max-width: 576px) {
+  .documentation-pages .vega-cms-home {
+    margin-bottom: 30rem;
+  }
+
+  .documentation-pages .content {
+    min-height: 56rem;
+  }
+
   .documentation-pages .content h1 {
     font-size: 3rem;
   }
 
   .documentation-pages .content h2 {
     font-size: 2rem;
+  }
+
+  .documentation-pages .footer {
+    bottom: 40px;
   }
 }
 

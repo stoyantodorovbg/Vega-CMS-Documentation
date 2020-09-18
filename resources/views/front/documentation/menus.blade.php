@@ -60,8 +60,8 @@
                         <p>URL field determines the page to which the menu item leads.</p>
                         <p>When the URL is for Administration section select the relevant prefix.</p>
                         <p>Only menu items which have active status are displayed.</p>
-                        <p>HTML classes can be added through the next field.</p>
-                        <p>Title, description and styles can be managed in the same way like on the menu form.</p>
+                        <p>Also HTML classes can be added.</p>
+                        <p>Title, description and styles can be managed in the same way like through the menu form.</p>
 
                         <h2>Manage Menu data via DB seeder</h2>
                         <p>This is a way to add a menu and menu items through DB seeder:</p>
