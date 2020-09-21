@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Vegacms\Cms\Models\Menu;
 use Illuminate\Database\Seeder;
 use Vegacms\Cms\Models\MenuItem;
@@ -19,7 +21,7 @@ class DocumentationSideMenuSeeder extends Seeder
             MenuItem::where('menu_id', 3)->delete();
         }
         // Documentation Side Navigation
-        $menu = factory(Menu::class)->create([
+        $menu = Menu::factory()->create([
             'title' => json_encode([
                 'text' => 'Vegacms CMS - Documentation Side Menu',
                 'status' => 0,
@@ -53,7 +55,7 @@ class DocumentationSideMenuSeeder extends Seeder
         $menu->save();
 
         // Documentation main navigation - menu items
-        factory(MenuItem::class)->create([
+        MenuItem::factory()->create([
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
@@ -88,7 +90,7 @@ class DocumentationSideMenuSeeder extends Seeder
         ]);
 
         // Documentation main navigation - menu items
-        factory(MenuItem::class)->create([
+        MenuItem::factory()->create([
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
@@ -122,7 +124,7 @@ class DocumentationSideMenuSeeder extends Seeder
             'styles' => json_encode([]),
         ]);
 
-        factory(MenuItem::class)->create([
+        MenuItem::factory()->create([
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
@@ -156,7 +158,7 @@ class DocumentationSideMenuSeeder extends Seeder
             'styles' => json_encode([]),
         ]);
 
-        factory(MenuItem::class)->create([
+        MenuItem::factory()->create([
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
@@ -190,7 +192,7 @@ class DocumentationSideMenuSeeder extends Seeder
             'styles' => json_encode([]),
         ]);
 
-        factory(MenuItem::class)->create([
+        MenuItem::factory()->create([
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
@@ -224,7 +226,7 @@ class DocumentationSideMenuSeeder extends Seeder
             'styles' => json_encode([]),
         ]);
 
-        factory(MenuItem::class)->create([
+        MenuItem::factory()->create([
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
@@ -258,7 +260,7 @@ class DocumentationSideMenuSeeder extends Seeder
             'styles' => json_encode([]),
         ]);
 
-        factory(MenuItem::class)->create([
+        MenuItem::factory()->create([
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
@@ -292,7 +294,7 @@ class DocumentationSideMenuSeeder extends Seeder
             'styles' => json_encode([]),
         ]);
 
-        factory(MenuItem::class)->create([
+        MenuItem::factory()->create([
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
@@ -326,7 +328,7 @@ class DocumentationSideMenuSeeder extends Seeder
             'styles' => json_encode([]),
         ]);
 
-        factory(MenuItem::class)->create([
+        MenuItem::factory()->create([
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
@@ -360,7 +362,7 @@ class DocumentationSideMenuSeeder extends Seeder
             'styles' => json_encode([]),
         ]);
 
-        factory(MenuItem::class)->create([
+        MenuItem::factory()->create([
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,
@@ -394,7 +396,7 @@ class DocumentationSideMenuSeeder extends Seeder
             'styles' => json_encode([]),
         ]);
 
-        factory(MenuItem::class)->create([
+        MenuItem::factory()->create([
             'menu_id' => $menu->id,
             'parent_id' => null,
             'status' => 1,

@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use App\Models\Contact;
 use Illuminate\Database\Seeder;
 
@@ -12,6 +14,6 @@ class ContactsTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(Contact::class, 3)->create();
+        Contact::factory()->count(3)->create();
     }
 }

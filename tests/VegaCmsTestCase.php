@@ -20,7 +20,7 @@ abstract class VegaCmsTestCase extends BaseTestCase
     protected function authenticate(User $user = null, string $groupName = null) : User
     {
         if (! $user) {
-            $user = factory(User::class)->create();
+            $user = User::factory()->create();
         }
 
         if($groupName) {
@@ -40,15 +40,15 @@ abstract class VegaCmsTestCase extends BaseTestCase
      */
     protected function assignGroups(User $user, string $groupName): void
     {
-        factory(Group::class)->create([
+        Group::factory()->create([
             'title' => 'admins',
             'description' => 'All rights.',
         ]);
-        factory(Group::class)->create([
+        Group::factory()->create([
             'title' => 'moderators',
             'description' => 'Some back office rights',
         ]);
-        factory(Group::class)->create([
+        Group::factory()->create([
             'title' => 'ordinaryUsers',
             'description' => 'Only front end rights',
         ]);

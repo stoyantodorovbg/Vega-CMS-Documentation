@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 use Vegacms\Cms\Models\MenuItem;
 
@@ -13,7 +15,7 @@ class AdminSideMenuSeeder extends Seeder
     public function run()
     {
         // Sidebar navigation - admin panel - menu items
-        factory(MenuItem::class)->create([
+        MenuItem::factory()->create([
             'menu_id' => 1,
             'parent_id' => null,
             'status' => 1,
@@ -47,7 +49,7 @@ class AdminSideMenuSeeder extends Seeder
             'styles' => json_encode([]),
         ]);
 
-        factory(MenuItem::class)->create([
+        MenuItem::factory()->create([
             'menu_id' => 1,
             'parent_id' => null,
             'status' => 1,
