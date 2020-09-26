@@ -58,26 +58,21 @@ const app = new Vue({
     store,
     props: {
         currentTheme: {
-          type: String
+            type: String
         }
     },
     methods: {
         ...mapActions(['vx_getLocale'])
     },
     created() {
-      EventBus.$on('changeTheme', (data) => {
-          //TODO make remove method
-          this.currentTheme = data;
-          localStorage.setItem('Theme', this.currentTheme);
-      });
+        EventBus.$on('changeTheme', (data) => {
+            //TODO make remove method
+            this.currentTheme = data;
+            localStorage.setItem('Theme', this.currentTheme);
+        });
 
-      /* set locale in the store */
-      this.vx_getLocale();
-
-
-
-
-
+        /* set locale in the store */
+        this.vx_getLocale();
     },
     mounted() {
         this.currentTheme = localStorage.getItem('Theme');
