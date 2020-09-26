@@ -7,6 +7,7 @@
 </template>
 
 <script>
+    import { mapGetters } from 'vuex';
     import MenuItemsContainer from "./MenuItemsContainer";
 
     export default {
@@ -26,6 +27,7 @@
         data() {
             return {
                 menuData: {},
+				        baseUrl: ''
             }
         },
 
@@ -33,9 +35,16 @@
             this.load();
         },
 
+        computed: {
+          ...mapGetters(['locale']);
+        }
+
         methods: {
             load() {
-                axios.get('/' + this.$store.getters.locale + 'menu-data', {
+
+				        this.baseUrl = '/Vega-CMS-Documentation/public/';
+                // this.$store.getters.locale === this.locale;
+                axios.get(this.baseUrl + this.locale + 'menu-data', {
                         params: {
                             menu_id: this.menu_id
                         }

@@ -52,6 +52,7 @@ Vue.component('change-locale', require('./components/localization/ChangeLocale.v
  */
 
 import EventBus from "./eventBus";
+import {mapActions} from 'vuex';
 const app = new Vue({
     el: '#app',
     store,
@@ -60,14 +61,25 @@ const app = new Vue({
           type: String
         }
     },
+    methods: {
+        ...mapActions(['vx_getLocale'])
+    },
     created() {
       EventBus.$on('changeTheme', (data) => {
+          //TODO make remove method
           this.currentTheme = data;
           localStorage.setItem('Theme', this.currentTheme);
-      })
+      });
+
+      /* set locale in the store */
+      this.vx_getLocale();
+
+
+
+
+
     },
     mounted() {
         this.currentTheme = localStorage.getItem('Theme');
     }
 });
-
