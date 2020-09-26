@@ -14,7 +14,7 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.5.0",
         "laravel/tinker": "^2.0",
-        "vegacms/cms": "^1.12.1",
+        "vegacms/cms": "^1.12.4",
         "ext-json": "*"
     },
     "require-dev": {

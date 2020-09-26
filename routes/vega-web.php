@@ -20,6 +20,7 @@ foreach(config('cms.locales.codes', []) as $code) {
         ->group(function () {
             Auth::routes();
         });
+    Route::get('/get-locale', '\Vegacms\Cms\Http\Controllers\Front\LocalesController@getLocale')->name('locales.get-locale');
 
     Route::prefix($code)
         ->middleware(['locale', 'web'])
@@ -70,6 +71,8 @@ foreach(config('cms.locales.codes', []) as $code) {
 
 			Route::get('/contacts', '\App\Http\Controllers\Front\ContactsController@index')->name('main-contacts')->middleware('trackRequest');
 
-			Route::post('/contacts/store', '\App\Http\Controllers\Front\ContactsController@store')->name('front-contacts.store')->middleware('trackRequest');
+			Route::post('/contacts/store', '\App\Http\Controllers\Front\ContactsController@store')->name('front-contacts.store');
+
+			Route::get('/get-locale', '\Vegacms\Cms\Http\Controllers\Front\LocalesController@getLocale')->name('locales.get-locale');
 		});
 }
