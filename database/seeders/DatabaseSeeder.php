@@ -22,5 +22,6 @@ class DatabaseSeeder extends Seeder
         $this->call(PhraseLabelsTableSeeder::class);
         $this->call(AdminSideMenuSeeder::class);
         $this->call(ContactsTableSeeder::class);
+        $this->call(RequestTrackTableSeeder::class);
     }
 }

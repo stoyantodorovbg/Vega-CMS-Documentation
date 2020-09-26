@@ -327,6 +327,17 @@ class RouteTableSeeder extends Seeder
             '\App\Http\Controllers\\'
         );
 
+        // Admin request tracks index
+        $this->createRoute('/request-tracks',
+            'get',
+            'RequestTracksController@index',
+            'admin-request-tracks.index',
+            'admin',
+            'admin',
+            'admins',
+            '\App\Http\Controllers\\'
+        );
+
         // Main contacts page
         $this->createRoute('/contacts',
             'get',

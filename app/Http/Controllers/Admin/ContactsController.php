@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use App\Models\Contact;
 use App\Http\Requests\Admin\ContactRequest;
 
-class ContactsController
+class ContactsController extends Controller
 {
     /**
      * Admin contacts index page
