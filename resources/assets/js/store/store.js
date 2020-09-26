@@ -15,8 +15,8 @@ export default new Vuex.Store({
               }
               commit('setLocale', response.data.locale);
 
-          } catch () {
-              //console.log(err)
+          } catch (err) {
+              console.log(err);
           }
 
 

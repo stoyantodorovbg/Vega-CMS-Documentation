@@ -36,8 +36,8 @@
         },
 
         computed: {
-          ...mapGetters(['locale']);
-        }
+          ...mapGetters(['locale']),
+        },
 
         methods: {
             load() {
