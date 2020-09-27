@@ -23,19 +23,19 @@
                         <p>ext-json: *</p>
                         <p>fideloper/proxy: ^4.0</p>
                         <p>laravel/tinker: ^2.0</p>
-                        <p>laravel/ui: ^2.0</p>
+                        <p>laravel/ui: ^3.0</p>
                         <p>spatie/laravel-translatable: ^4.1</p>
                         <h3>requires (dev)</h3>
-                        <p>laravel/framework: ^7.0</p>
+                        <p>laravel/framework: ^8.0</p>
                         <p>ext-json: *</p>
                         <p>barryvdh/laravel-debugbar: ^3.2</p>
                         <p>beyondcode/laravel-dump-server: ^1.0</p>
                         <p>filp/whoops: ^2.0</p>
                         <p>mockery/mockery: ^1.0</p>
                         <p>fzaninotto/faker: ^1.4</p>
-                        <p>nunomaduro/collision: ^4.1</p>
-                        <p>phpunit/phpunit: ^8.5</p>
-                        <p>facade/ignition: ^2.0</p>
+                        <p>nunomaduro/collision: ^5.0</p>
+                        <p>phpunit/phpunit: ^9.0</p>
+                        <p>facade/ignition: ^2.3.6</p>
                         <p>orchestra/testbench: 5.3.0</p>
                         <p>roave/security-advisories: dev-master</p>
                         <h2>package.json:</h2>

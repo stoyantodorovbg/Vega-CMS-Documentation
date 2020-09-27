@@ -5,7 +5,10 @@
             <dynamic-menu :menu_id="2"></dynamic-menu>
         </div>
 
-        <h1 class="title">Vega CMS<span> 1.12.1</span></h1>
+        <h1 class="title">Vega CMS PHP Package
+            <div class="sub-title">1.12.4</div>
+            <div class="sub-title">based on Laravel Framework</div>
+        </h1>
         <div class="row">
             <div class="col-12">
                 <article class="description"></article>

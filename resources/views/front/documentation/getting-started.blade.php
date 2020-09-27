@@ -18,7 +18,7 @@
                     <div class="col-12">
                         <h1>Getting Started</h1>
                         <h2>Installation:</h2>
-                        <p>Vega CMS is made to integrate with Laravel.</p>
+                        <p>Vega CMS PHP Package is made to integrate with Laravel.</p>
                         <p class="mt-5 pt-3">It can be added to Laravel project through:</p>
                         <p><code class="command">composer require vegacms/cms</code></p>
                         <p class="mt-5">Next command creates some route files, migrates database, publishes JS and SCSS assets, installs front-end
