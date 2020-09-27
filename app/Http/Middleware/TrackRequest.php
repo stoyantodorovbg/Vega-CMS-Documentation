@@ -2,9 +2,9 @@
 
 namespace App\Http\Middleware;
 
-use App\Models\RequestTrack;
 use Closure;
 use Illuminate\Http\Request;
+use App\Jobs\TrackRequest as TrackRequestJob;
 
 class TrackRequest
 {
@@ -17,11 +17,10 @@ class TrackRequest
      */
     public function handle(Request $request, Closure $next)
     {
-        if (config('logging.logRequests', false)) {
-            RequestTrack::create([
-                'url' => $request->route()->uri(),
-            ]);
-        }
+        TrackRequestJob::dispatchIf(
+            config('logging.logRequests', false),
+            $request->route()->uri()
+        );
 
         return $next($request);
     }
