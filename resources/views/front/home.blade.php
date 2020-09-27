@@ -6,7 +6,7 @@
         </div>
 
         <h1 class="title">Vega CMS 1.12.4
-            <div class="sub-title">Open Source PHP Package based on Laravel Framework</div>
+            <div class="sub-title">Open Sourced PHP Package based on Laravel Framework</div>
         </h1>
         <h3 class="text-center display-3">
             <div>

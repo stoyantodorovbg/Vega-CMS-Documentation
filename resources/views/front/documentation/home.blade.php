@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-12">
                         <h1 class="vega-cms-home">Vega CMS 1.12.4
-                            <div class="sub-title">Open Source PHP Package based on Laravel Framework</div>
+                            <div class="sub-title">Open Sourced PHP Package based on Laravel Framework</div>
                             <div>
                                 <a class="sub-title" href="https://packagist.org/packages/vegacms/cms#dev-master" target="_blank">
                                     Packagist
