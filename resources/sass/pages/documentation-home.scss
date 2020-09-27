@@ -1,19 +1,85 @@
 .documentation-pages {
     min-width: 100%;
+    background-color: #f7f7f7;
 
     .vega-cms-home {
-        margin-bottom: 58rem;
+        font-size: 4.2rem;
+        font-family: 'Poppins', sans-serif;
+        color: #35495e;
+    }
+    .vega-cms-home-subtitle {
+      font-size: 2rem;
+      font-family: 'Poppins', sans-serif;
+      color: #35495e;
+    }
+
+    @media (max-width: 1240px) {
+        .col-lg-2, .col-lg-10 {
+          width: 100%;
+        }
+        .documentation-home-sidebar {
+            height: auto;
+        }
+        .documentation-side-nav {
+            display: inline-flex!important;
+            flex-wrap: wrap;
+        }
+    }
+
+    .navbar {
+      height: auto;
+    }
+    .nav-item {
+      padding: 2rem 0;
     }
 
     .content {
-        background: gainsboro;
-        color: maroon;
-        min-height: 73rem;
+          margin-top: 7rem;
+          padding: 3rem 1.5rem;
+          min-height: calc(100vh - 12.3rem);
+
+          .card {
+              border: 0;
+              margin-bottom: 3rem;
+              margin-top: 3rem;
+              border-radius: 6px;
+              color: #333333;
+              background: white;
+              width: 100%;
+              box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+          }
+          .card [class*="card-header-"] {
+              margin: -2.5rem 1.5rem 0 1.5rem;
+              border-radius: 6px;
+              padding: 0;
+              position: relative;
+              box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+              padding: 1.5rem 1rem;
+          }
+          .card-body {
+              background: white;
+              margin-bottom: 1rem;
+          }
+          .card-header {
+
+          }
+          .card-header-primary {
+            background: linear-gradient(45deg, #35495e, #41b883);
+          }
+          .card-title {
+              letter-spacing: 2px;
+              font-size: 2.2rem;
+              color: white;
+              width: 100%;
+              text-align: center;
+              font-weight: 300;
+              text-transform: uppercase;
+          }
 
         h1 {
             text-align: center;
             font-weight: bold;
-            font-size: 7rem;
+            font-size: 3rem;
             margin-top: 7rem;
 
             span {
@@ -22,16 +88,16 @@
         }
 
         h2 {
-            font-size: 3.5rem;
-            font-weight: bold;
+            font-size: 2.5rem;
+            font-weight: 500;
             margin: 4rem 0 2rem 0;
         }
 
-        h3 {
-            font-size: 2.5rem;
-            font-weight: normal;
-            margin: 4rem 0 2rem 0;
-        }
+        // h3 {
+        //     font-size: 2.5rem;
+        //     font-weight: normal;
+        //     margin: 4rem 0 2rem 0;
+        // }
 
         p {
             font-size: 1.8rem;
@@ -68,19 +134,15 @@
     }
 
     .footer {
-        max-height: 3rem;
-        background: gainsboro;
-        font-size: 1.5rem;
-        color: green;
-        text-align: right;
-        padding: 0.5rem;
-        margin-top: 52rem;
-        position: absolute;
-        bottom: 10px;
-
-        p {
-            margin: 0 2rem 0 0;
-        }
+      background: #eee;
+      font-size: 1.5rem;
+      color: black;
+      text-align: right;
+      padding: 1rem 1.5rem;
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      left: 0;
     }
 
     @media (max-width: 768px) {
