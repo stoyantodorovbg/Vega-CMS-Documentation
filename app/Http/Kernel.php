@@ -66,5 +66,6 @@ class Kernel extends HttpKernel
         'admins' => \App\Http\Middleware\Admins::class,
         'moderators' => \App\Http\Middleware\Moderators::class,
         'ordinaryUsers' => \App\Http\Middleware\OrdinaryUsers::class,
+        'trackRequest' => \App\Http\Middleware\TrackRequest::class,
     ];
 }

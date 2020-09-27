@@ -20922,6 +20922,10 @@ section {
   letter-spacing: 0.5rem;
 }
 
+.home-page .sub-title {
+  font-size: 4.8rem;
+}
+
 .home-page .description {
   font-size: 1.7rem;
   color: peachpuff;
@@ -20980,6 +20984,10 @@ section {
 
 .documentation-pages .nav-item {
   padding: 2rem 0;
+}
+
+.documentation-pages .sub-title {
+  font-size: 4.8rem;
 }
 
 .documentation-pages .content {

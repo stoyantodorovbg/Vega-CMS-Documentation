@@ -153,5 +153,7 @@ foreach (config('cms.locales.codes') as $code) {
 			Route::get('/contacts/{contact}/edit', '\App\Http\Controllers\Admin\ContactsController@edit')->name('admin-contacts.edit')->middleware('admins');
 
 			Route::patch('/contacts/{contact}/update', '\App\Http\Controllers\Admin\ContactsController@update')->name('admin-contacts.update')->middleware('admins');
+
+			Route::get('/request-tracks', '\App\Http\Controllers\Admin\RequestTracksController@index')->name('admin-request-tracks.index')->middleware('admins');
 		});
 }

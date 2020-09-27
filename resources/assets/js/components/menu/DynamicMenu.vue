@@ -46,8 +46,8 @@ export default {
     methods: {
         load() {
 
-            //  this.baseUrl = '/';//= '/Vega-CMS-Documentation/public/';
-            this.baseUrl = '/Vega-CMS-Documentation/public/';
+            //  this.baseUrl = '/Vega-CMS-Documentation/public/';
+            this.baseUrl = '/';
             // this.$store.getters.locale === this.locale;
             axios.get(this.baseUrl + this.locale + 'menu-data', {
                 params: {

@@ -72,7 +72,7 @@
                              alt="JSON presenter" class="w-75"
                         >
                         <h2>Connected Select Boxes</h2>
-                        <p>When using Vega CMS you can easily add a select box witch options depend on the selected option in other select box.
+                        <p>When using Vega CMS PHP Package you can easily add a select box witch options depend on the selected option in other select box.
                             Add Vue.js components like these in your template:</p>
                         <pre>
                           {{ '

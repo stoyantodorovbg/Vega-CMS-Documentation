@@ -39,37 +39,37 @@ foreach(config('cms.locales.codes', []) as $code) {
 
 			Route::post('/set-locale', '\Vegacms\Cms\Http\Controllers\Front\LocalesController@setLocale')->name('locales.set-locale');
 
-			Route::get('/', '\App\Http\Controllers\Front\HomeController@index')->name('main-home');
+			Route::get('/', '\App\Http\Controllers\Front\HomeController@index')->name('main-home')->middleware('trackRequest');
 
-			Route::get('/documentation', '\App\Http\Controllers\Front\DocumentationController@home')->name('documentation-home');
+			Route::get('/documentation', '\App\Http\Controllers\Front\DocumentationController@home')->name('documentation-home')->middleware('trackRequest');
 
-			Route::get('/getting-started', '\App\Http\Controllers\Front\DocumentationController@gettingStarted')->name('documentation-getting-started');
+			Route::get('/getting-started', '\App\Http\Controllers\Front\DocumentationController@gettingStarted')->name('documentation-getting-started')->middleware('trackRequest');
 
-			Route::get('/localization', '\App\Http\Controllers\Front\DocumentationController@localization')->name('documentation-localization');
+			Route::get('/localization', '\App\Http\Controllers\Front\DocumentationController@localization')->name('documentation-localization')->middleware('trackRequest');
 
-			Route::get('/routing', '\App\Http\Controllers\Front\DocumentationController@routing')->name('documentation-routing');
+			Route::get('/routing', '\App\Http\Controllers\Front\DocumentationController@routing')->name('documentation-routing')->middleware('trackRequest');
 
-			Route::get('/authorization', '\App\Http\Controllers\Front\DocumentationController@authorization')->name('documentation-authorization');
+			Route::get('/authorization', '\App\Http\Controllers\Front\DocumentationController@authorization')->name('documentation-authorization')->middleware('trackRequest');
 
-			Route::get('/translations', '\App\Http\Controllers\Front\DocumentationController@translations')->name('documentation-translations');
+			Route::get('/translations', '\App\Http\Controllers\Front\DocumentationController@translations')->name('documentation-translations')->middleware('trackRequest');
 
-			Route::get('/menus', '\App\Http\Controllers\Front\DocumentationController@menus')->name('documentation-menus');
+			Route::get('/menus', '\App\Http\Controllers\Front\DocumentationController@menus')->name('documentation-menus')->middleware('trackRequest');
 
-			Route::get('/pages', '\App\Http\Controllers\Front\DocumentationController@pages')->name('documentation-pages');
+			Route::get('/pages', '\App\Http\Controllers\Front\DocumentationController@pages')->name('documentation-pages')->middleware('trackRequest');
 
-			Route::get('/testing', '\App\Http\Controllers\Front\DocumentationController@testing')->name('documentation-testing');
+			Route::get('/testing', '\App\Http\Controllers\Front\DocumentationController@testing')->name('documentation-testing')->middleware('trackRequest');
 
-			Route::get('/requirements', '\App\Http\Controllers\Front\DocumentationController@requirements')->name('documentation-requirements');
+			Route::get('/requirements', '\App\Http\Controllers\Front\DocumentationController@requirements')->name('documentation-requirements')->middleware('trackRequest');
 
-			Route::get('/useful-functionalities', '\App\Http\Controllers\Front\DocumentationController@usefulFunctionalities')->name('documentation-useful-functionalities');
+			Route::get('/useful-functionalities', '\App\Http\Controllers\Front\DocumentationController@usefulFunctionalities')->name('documentation-useful-functionalities')->middleware('trackRequest');
 
-			Route::get('/utilities', '\App\Http\Controllers\Front\DocumentationController@utilities')->name('documentation-utilities');
+			Route::get('/utilities', '\App\Http\Controllers\Front\DocumentationController@utilities')->name('documentation-utilities')->middleware('trackRequest');
 
-			Route::get('/news', '\App\Http\Controllers\Front\NewsController@index')->name('main-news');
+			Route::get('/news', '\App\Http\Controllers\Front\NewsController@index')->name('main-news')->middleware('trackRequest');
 
-			Route::get('/about', '\App\Http\Controllers\Front\AboutController@index')->name('main-about');
+			Route::get('/about', '\App\Http\Controllers\Front\AboutController@index')->name('main-about')->middleware('trackRequest');
 
-			Route::get('/contacts', '\App\Http\Controllers\Front\ContactsController@index')->name('main-contacts');
+			Route::get('/contacts', '\App\Http\Controllers\Front\ContactsController@index')->name('main-contacts')->middleware('trackRequest');
 
 			Route::post('/contacts/store', '\App\Http\Controllers\Front\ContactsController@store')->name('front-contacts.store');
 
