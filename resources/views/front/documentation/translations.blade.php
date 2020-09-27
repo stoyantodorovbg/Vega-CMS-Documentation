@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-12">
                         <h1>Translations</h1>
-                        <p>Vega CMS provides translation functionality that is related to the localization.
+                        <p>Vega CMS PHP Package provides translation functionality that is related to the localization.
                             The phrases are translated to the selected locale when they have content for it.
                             They could be managed through Administration or DB seeder.</p>
                         <h2>Translation management through Administration</h2>

@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.custom_name', 'Vega CMS Documentation') }}</title>
+    <title>{{ config('app.custom_name', 'Vega CMS PHP Package Documentation based on Laravel Framework') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>

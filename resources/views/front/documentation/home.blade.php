@@ -16,7 +16,10 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <h1 class="vega-cms-home">Vega CMS 1.11.0</h1>
+                        <h1 class="vega-cms-home">Vega CMS PHP Package
+                            <div class="sub-title">1.12.4</div>
+                            <div class="sub-title">based on Laravel Framework</div>
+                        </h1>
                     </div>
                 </div>
                 <div class="row">

@@ -8,7 +8,7 @@
         <p class="title"></p>
         <article class="description">
             <p>
-                Vega CMS is build on top of Laravel. It's designed to facilitate the developers work providing ready - made basic functionalities such as:
+                Vega CMS PHP Package is build on top of Laravel. It's designed to facilitate the developers work providing ready - made basic functionalities such as:
             </p>
             <ul>
                 <li>Administration user interface</li>

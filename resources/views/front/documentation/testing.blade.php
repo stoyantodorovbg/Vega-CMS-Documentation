@@ -22,7 +22,7 @@
                         <p>So</p>
                         <p><code class="command">phpunit vendor/vegacms/cms/tests</code></p>
                         <p>runs Vega CMS tests</p>
-                        <p>As Vega CMS has functionalities that write into some PHP files, if some tests fail it could cause changes into these files.
+                        <p>As Vega CMS PHP Package has functionalities that write into some PHP files, if some tests fail it could cause changes into these files.
                             When testing Vega CMS use version control system to track any changes.
                         </p>
                     </div>

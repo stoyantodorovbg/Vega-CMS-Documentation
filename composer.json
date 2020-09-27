@@ -16,7 +16,7 @@
         "laravel/tinker": "^2.0",
         "vegacms/cms": "^1.12.4",
         "ext-json": "*",
-	"fzaninotto/faker": "^1.9.1"
+        "fzaninotto/faker": "^1.9.1"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",
