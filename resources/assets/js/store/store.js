@@ -10,10 +10,10 @@ export default new Vuex.Store({
         async vx_getLocale({commit}) {
             try {
                 const response = await axios.get('/get-locale');
-                if(!response.data.locale) {
+                if(!response.data) {
                     return;
                 }
-                commit('setLocale', response.data.locale);
+                commit('setLocale', response.data);
 
             } catch (err) {
                 console.log(err);
@@ -23,8 +23,8 @@ export default new Vuex.Store({
         }
     },
     mutations: {
-        setLocale({state}, locale) {
-            return state.st_locale;
+        setLocale(state, locale) {
+            return locale ? locale : state.st_locale;
         }
     },
     getters: {
