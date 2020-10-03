@@ -18,8 +18,9 @@
                     <div class="col-12">
                       <div class="logo-panel w-100 text-center">
                             <img src="/logo.png" width="200" alt="Vega CMS" class="img-fluid">
-                            <h3 class="vega-cms-home">VEGA</h3>
-                            <h4 class="vega-cms-home-subtitle">1.11.0<h4>
+                            <h3 class="vega-cms-home">VEGA CMS PHP Package</h3>
+                            <h4 class="vega-cms-home-subtitle">1.12.4<h4>
+                            <h5>based on Laravel Framework</h5>
                       </div>
                     </div>
                 </div>
