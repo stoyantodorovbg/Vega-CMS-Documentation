@@ -12,7 +12,6 @@
                       <dynamic-menu :menu_id="4"></dynamic-menu>
                   </div>
                 </div>
-<<<<<<< HEAD
                 <div class="container">
                     <div class="card">
                         <div class="card-header card-header-primary">
@@ -28,19 +27,6 @@
                                 When testing Vega CMS use version control system to track any changes.
                             </p>
                         </div>
-=======
-                <div class="row">
-                    <div class="col-12">
-                        <h1>Testing</h1>
-                        <p>If you want to run Vega CMS tests on your application, should integrate them with the command:</p>
-                        <p><code class="command">php artisan integrate:vegacms-cms-testing</code></p>
-                        <p>So</p>
-                        <p><code class="command">phpunit vendor/vegacms/cms/tests</code></p>
-                        <p>runs Vega CMS tests</p>
-                        <p>As Vega CMS PHP Package has functionalities that write into some PHP files, if some tests fail it could cause changes into these files.
-                            When testing Vega CMS use version control system to track any changes.
-                        </p>
->>>>>>> 82211fbbdb33c37f46e92ef9e5d8f7f500683aa2
                     </div>
                 </div>
                 <div class="row">
