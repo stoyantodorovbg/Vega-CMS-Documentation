@@ -1,7 +1,7 @@
 @extends('front.layouts.app')
 
 @section('content')
-    <div class="container m-0 p-0 w-100 documentation-pages">
+    <div class="container-fluid documentation-pages documentation-pages">
         <div class="row">
             <div class="col-lg-2 documentation-home-sidebar sticky-top">
                 <dynamic-menu :menu_id="3"></dynamic-menu>
