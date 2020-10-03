@@ -1,7 +1,6 @@
 <template>
-    <div :class="menuItemData.classes"
-         :style="menuItemData.styles"
-    >
+    <div :class="menuItemData.classes + menuItemActiveClass"
+         :style="menuItemData.styles">
         <a v-if="menuItemData.title && menuItemData.title.status"
                 :href="$helpers[menuItemData.prefix + 'UrlPrefix']($store.getters.locale) + menuItemData.url"
                 :class="menuItemData.title.classes"
@@ -24,6 +23,8 @@
 </template>
 
 <script>
+    import EventBus from "../../eventBus";
+
     export default {
         name: 'menu-item',
 
@@ -83,6 +84,26 @@
                         },
                         styles: [],
                     };
+                }
+            }
+        },
+
+        data() {
+            return {
+                menuItemActiveClass: '',
+            }
+        },
+
+        mounted() {
+            this.setActiveMenuItem();
+        },
+
+        methods: {
+            setActiveMenuItem() {
+                if (window.location.pathname === '/' + this.menuItemData.url) {
+                    this.menuItemActiveClass = ' sidebar-active';
+                } else {
+                    this.menuItemActiveClass =  '';
                 }
             }
         }

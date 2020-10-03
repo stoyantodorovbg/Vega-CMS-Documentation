@@ -25,7 +25,7 @@ class DocumentationSideMenuSeeder extends Seeder
             'title' => json_encode([
                 'text' => 'Vegacms CMS - Documentation Side Menu',
                 'status' => 0,
-                'classes' => 'nav-title',
+                'classes' => '',
                 'styles' => [],
                 'structure' => [
                     'text' => ['type' => 'text'],
@@ -269,7 +269,7 @@ class DocumentationSideMenuSeeder extends Seeder
                 'text' => 'Menus',
                 'status' => 1,
                 'classes' => '',
-                'styles',
+                'styles' => [],
                 'structure' => [
                     'text' => ['type' => 'text'],
                     'status' => ['type' => 'text'],
@@ -303,7 +303,7 @@ class DocumentationSideMenuSeeder extends Seeder
                 'text' => 'Pages',
                 'status' => 1,
                 'classes' => '',
-                'styles',
+                'styles' => [],
                 'structure' => [
                     'text' => ['type' => 'text'],
                     'status' => ['type' => 'text'],
