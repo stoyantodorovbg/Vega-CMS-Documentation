@@ -1,22 +1,23 @@
 @extends('front.layouts.app')
 
 @section('content')
-    <div class="container m-0 p-0 w-100 documentation-pages">
+    <div class="container-fluid documentation-pages">
         <div class="row">
-            <div class="col-2 documentation-home-sidebar">
+            <div class="col-lg-2 documentation-home-sidebar sticky-top">
                 <dynamic-menu :menu_id="3"></dynamic-menu>
             </div>
-            <div class="col-10 content">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="documentation-home-main-nav">
-                            <dynamic-menu :menu_id="4"></dynamic-menu>
-                        </div>
-                    </div>
+            <div class="col-lg-10 content">
+                <div class="container">
+                  <div class="documentation-home-main-nav">
+                      <dynamic-menu :menu_id="4"></dynamic-menu>
+                  </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <h1>Authorization</h1>
+                <div class="container">
+                    <div class="card">
+                      <div class="card-header card-header-primary">
+                          <h3 class="card-title">Authorization</h3>
+                      </div>
+                      <div class="card-body">
                         <p>The authorization is provided by middlewares which are automatically added to the routes.
                             They are related to the user groups.
                             When a group is attached to route, only its members can access it.
@@ -31,70 +32,70 @@
                         <h2>Create Group through DB seeder</h2>
                         <p>The DB seeder could looks like this:</p>
                         <pre>
-use Vegacms\Cms\Models\Group;
-use Illuminate\Database\Seeder;
-use Vegacms\Cms\Services\Interfaces\GroupServiceInterface;
-use Vegacms\Cms\Services\Interfaces\FileCreateServiceInterface;
+                            use Vegacms\Cms\Models\Group;
+                            use Illuminate\Database\Seeder;
+                            use Vegacms\Cms\Services\Interfaces\GroupServiceInterface;
+                            use Vegacms\Cms\Services\Interfaces\FileCreateServiceInterface;
 
-class GroupsTableSeeder extends Seeder
-{
-    /**
-     * @var FileCreateServiceInterface
-     */
-    protected $fileCreateService;
+                            class GroupsTableSeeder extends Seeder
+                            {
+                                /**
+                                 * @var FileCreateServiceInterface
+                                 */
+                                protected $fileCreateService;
 
-    /**
-     * @var GroupServiceInterface
-     */
-    private $groupService;
+                                /**
+                                 * @var GroupServiceInterface
+                                 */
+                                private $groupService;
 
-    /**
-     * GroupsTableSeeder constructor.
-     * @param FileCreateServiceInterface $fileCreateService
-     * @param GroupServiceInterface $groupService
-     */
-    public function __construct(FileCreateServiceInterface $fileCreateService, GroupServiceInterface $groupService)
-    {
-        $this->fileCreateService = $fileCreateService;
-        $this->groupService = $groupService;
-    }
+                                /**
+                                 * GroupsTableSeeder constructor.
+                                 * @param FileCreateServiceInterface $fileCreateService
+                                 * @param GroupServiceInterface $groupService
+                                 */
+                                public function __construct(FileCreateServiceInterface $fileCreateService, GroupServiceInterface $groupService)
+                                {
+                                    $this->fileCreateService = $fileCreateService;
+                                    $this->groupService = $groupService;
+                                }
 
 
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
-    public function run(): void
-    {
-        if (!$this->middlewareExists('customers')) {
-            $this->groupService->create([
-                'title' => 'customers',
-                'description' => 'Customer.',
-            ]);
-        } else {
-            factory(Group::class)->create([
-                'title' => 'customers',
-                'description' => 'Customer.',
-            ]);
-        }
-    }
+                                /**
+                                 * Run the database seeds.
+                                 *
+                                 * @return void
+                                 */
+                                public function run(): void
+                                {
+                                    if (!$this->middlewareExists('customers')) {
+                                        $this->groupService->create([
+                                            'title' => 'customers',
+                                            'description' => 'Customer.',
+                                        ]);
+                                    } else {
+                                        factory(Group::class)->create([
+                                            'title' => 'customers',
+                                            'description' => 'Customer.',
+                                        ]);
+                                    }
+                                }
 
-    /**
-     * Check if the middleware already exists
-     *
-     * @param string $groupTitle
-     * @return bool
-     */
-    protected function middlewareExists(string $groupTitle): bool
-    {
-        return $this->fileCreateService->fileExists(
-            '/app/Http/Middleware/',
-            ucfirst($groupTitle),
-            '.php'
-            );
-    }
-}
+                                /**
+                                 * Check if the middleware already exists
+                                 *
+                                 * @param string $groupTitle
+                                 * @return bool
+                                 */
+                                protected function middlewareExists(string $groupTitle): bool
+                                {
+                                    return $this->fileCreateService->fileExists(
+                                        '/app/Http/Middleware/',
+                                        ucfirst($groupTitle),
+                                        '.php'
+                                        );
+                                }
+                            }
 
                         </pre>
                         <h2>Attach/Detach Group to/from Route through Administration</h2>
@@ -107,6 +108,7 @@ class GroupsTableSeeder extends Seeder
                         <p><code class="command">php artisan detach:route-from-group routeName groupTitle</code></p>
                         <h2>Attach/Detach Group to/from Route through DB seeder</h2>
                         <p class="mb-5 pb-5">It is presented on <a href="{{ route('documentation-routing') }}#create-route-through-db-seeder">routing</a> page</p>
+                      </div>
                     </div>
                 </div>
                 <div class="row">

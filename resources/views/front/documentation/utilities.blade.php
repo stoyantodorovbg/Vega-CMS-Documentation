@@ -3,30 +3,31 @@
 @section('content')
     <div class="container m-0 p-0 w-100 documentation-pages">
         <div class="row">
-            <div class="col-2 documentation-home-sidebar">
+            <div class="col-lg-2 documentation-home-sidebar sticky-top">
                 <dynamic-menu :menu_id="3"></dynamic-menu>
             </div>
-            <div class="col-10 content">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="documentation-home-main-nav">
-                            <dynamic-menu :menu_id="4"></dynamic-menu>
-                        </div>
-                    </div>
+            <div class="col-lg-10 content">
+                <div class="container">
+                  <div class="documentation-home-main-nav">
+                      <dynamic-menu :menu_id="4"></dynamic-menu>
+                  </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <h1>Utilities</h1>
+                <div class="container">
+                    <div class="card">
+                      <div class="card-header card-header-primary">
+                          <h3 class="card-title">Utilities</h3>
+                      </div>
+                      <div class="card-body">
                         <h2>Admin Index Pages</h2>
                         <p>It is easy to display models data in the administration. This code renders users page:</p>
                         <pre>
-{{ '<model-index :model_name="\'\\\Vegacms\\\Cms\\\Models\\\User\'"
-             :actions="{
-                    \'show\': 1,
-                    \'edit\': 1,
-                    \'delete\': 1
-                }"
-></model-index>' }}
+                            {{ '<model-index :model_name="\'\\\Vegacms\\\Cms\\\Models\\\User\'"
+                                         :actions="{
+                                                \'show\': 1,
+                                                \'edit\': 1,
+                                                \'delete\': 1
+                                            }"
+                            ></model-index>' }}
                         </pre>
                         <img src="{{ asset('storage/documentation-screenshots/utilities/admin-index-page.png') }}"
                              alt="admin index page" class="w-75"
@@ -34,13 +35,13 @@
                         <h2>JSON input</h2>
                         <p>JSON data can be presented and edited by dynamically rendered input fields. Send your JSON data to JsonInput Vue.js component:</p>
                         <pre>
-{{
-    '<json-input
-        json_data="{{ $page->meta_tags } }"
-        input_name="meta_tags"
-        :level="1"
-></json-input>'
-}}
+                            {{
+                                '<json-input
+                                    json_data="{{ $page->meta_tags } }"
+                                    input_name="meta_tags"
+                                    :level="1"
+                            ></json-input>'
+                            }}
                         </pre>
                         <p>It renders</p>
                         <img src="{{ asset('storage/documentation-screenshots/utilities/json-input.png') }}"
@@ -63,9 +64,9 @@
                         <h2>JSON Presenter</h2>
                         <p>JSON data can be presented easily by JsonPresenter Vue.js component:</p>
                         <pre>
-{{
-    '<json-presenter :json_data="{{ $menu->title } }"></json-presenter>'
-}}
+                          {{
+                              '<json-presenter :json_data="{{ $menu->title } }"></json-presenter>'
+                          }}
                         </pre>
                         <img src="{{ asset('storage/documentation-screenshots/utilities/json-presenter.png') }}"
                              alt="JSON presenter" class="w-75"
@@ -74,42 +75,42 @@
                         <p>When using Vega CMS PHP Package you can easily add a select box witch options depend on the selected option in other select box.
                             Add Vue.js components like these in your template:</p>
                         <pre>
-{{ '
-<parent-select-input
-        :input_data="{
-            name: \'menu_id\',
-            id: \'munu_item_menu_id\'
-        }"
-        event_name="munu_item_menu_id_selected"
-        options="{{ $menus } }"
-        :http_data="{
-            endpoint: \'derived-input-data\',
-            params: {
-                model: \'\\Vegacms\\Cms\\Models\\MenuItem\'
-            },
-            field_name: \'menu_id\'
-        }"
-        selected_value="{{ isset($menuItem) ? $menuItem->menu_id  : null} }"
-></parent-select-input>
+                          {{ '
+                          <parent-select-input
+                                  :input_data="{
+                                      name: \'menu_id\',
+                                      id: \'munu_item_menu_id\'
+                                  }"
+                                  event_name="munu_item_menu_id_selected"
+                                  options="{{ $menus } }"
+                                  :http_data="{
+                                      endpoint: \'derived-input-data\',
+                                      params: {
+                                          model: \'\\Vegacms\\Cms\\Models\\MenuItem\'
+                                      },
+                                      field_name: \'menu_id\'
+                                  }"
+                                  selected_value="{{ isset($menuItem) ? $menuItem->menu_id  : null} }"
+                          ></parent-select-input>
 
-<derived-select-input
-        :input_data="{
-            name: \'parent_id\',
-            id: \'munu_item_parent_id\'
-        }"
-        listen_on="munu_item_menu_id_selected"
-        selected_value="{{ isset($menuItem) ? $menuItem->parent_id  : null} }"
-></derived-select-input>
-' }}
+                          <derived-select-input
+                                  :input_data="{
+                                      name: \'parent_id\',
+                                      id: \'munu_item_parent_id\'
+                                  }"
+                                  listen_on="munu_item_menu_id_selected"
+                                  selected_value="{{ isset($menuItem) ? $menuItem->parent_id  : null} }"
+                          ></derived-select-input>
+                          ' }}
                         </pre>
                         <p><strong>input_data</strong> name and id are the HTML attributes that both components render.</p>
                         <p>Choose unique <strong>event_name</strong>. <strong>DerivedSelectInput</strong> listens on the same event key.</p>
                         <p>Send the available options as <strong>options</strong> key to <strong>ParentSelectInput</strong>.This data have to be Collection that contains such items:</p>
                         <pre>
-[
-    'value' => $item->id,
-    'text' => $item->text
-]
+                            [
+                                'value' => $item->id,
+                                'text' => $item->text
+                            ]
                         </pre>
                         <p>In <strong>http_data</strong> params set the model namespace for the requested data.
                             <strong>field_name</strong> key determines the model field that is used for filtering.</p>
@@ -154,6 +155,7 @@ public function createFile(string $folderPath, string $fileName, string $fileExt
                         <pre>
 public function destroyFile(string $folderPath, string $fileName, string $fileExtension): bool;
                         </pre>
+                      </div>
                     </div>
                 </div>
                 <div class="row">

@@ -1,13 +1,17 @@
 <template>
-    <nav>
-        <menu-items-container v-if="menuData.status"
-                              :menuData="menuData"
-        ></menu-items-container>
-    </nav>
+
+<nav>
+    <menu-items-container v-if="menuData.status" :menuData="menuData"></menu-items-container>
+</nav>
+
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+
+import {
+    mapGetters
+}
+from 'vuex';
 import MenuItemsContainer from "./MenuItemsContainer";
 
 export default {
@@ -42,17 +46,18 @@ export default {
     methods: {
         load() {
 
-            this.baseUrl = '/';//= '/Vega-CMS-Documentation/public/';
+            //  this.baseUrl = '/Vega-CMS-Documentation/public/';
+            this.baseUrl = '/';
             // this.$store.getters.locale === this.locale;
             axios.get(this.baseUrl + this.locale + 'menu-data', {
-                    params: {
-                        menu_id: this.menu_id
-                    }
+                params: {
+                    menu_id: this.menu_id
                 }
-            ).then((response) => {
+            }).then((response) => {
                 this.menuData = response.data.menu;
             });
         }
     }
 }
+
 </script>
