@@ -1,5 +1,5 @@
 <template>
-    <div :class="menuItemData.classes + menuItemActiveClass"
+    <div :class="menuItemData.classes + ' ' + sidebarActiveClass"
          :style="menuItemData.styles">
         <a v-if="menuItemData.title && menuItemData.title.status"
                 :href="$helpers[menuItemData.prefix + 'UrlPrefix']($store.getters.locale) + menuItemData.url"
@@ -90,21 +90,20 @@
 
         data() {
             return {
-                menuItemActiveClass: '',
+                sidebarActiveClass: '',
             }
         },
 
         mounted() {
-            this.setActiveMenuItem();
+            this.setSidebarActiveClass();
         },
 
         methods: {
-            setActiveMenuItem() {
+            setSidebarActive() {
                 if (window.location.pathname === '/' + this.menuItemData.url) {
-                    this.menuItemActiveClass = ' sidebar-active';
-                } else {
-                    this.menuItemActiveClass =  '';
+                    return  this.sidebarActiveClass = 'sidebar-active';
                 }
+                return  this.sidebarActiveClass =  '';
             }
         }
     }

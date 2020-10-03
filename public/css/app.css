@@ -21256,6 +21256,28 @@ section {
   }
 }
 
+.documentation-home-sidebar .documentation-side-nav div.sidebar-active {
+  border-radius: 5px;
+  background: linear-gradient(45deg, #35495e, #41b883);
+  background-color: #edeff1;
+  color: white;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+}
+
+.documentation-home-sidebar .documentation-side-nav div.sidebar-active a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.documentation-home-sidebar .documentation-side-nav div.sidebar-active:hover {
+  color: white;
+}
+
+.documentation-home-sidebar .documentation-side-nav div.sidebar-active:hover a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .documentation-home-main-nav .documentation-main-nav {
   justify-content: center;
   justify-content: center;
