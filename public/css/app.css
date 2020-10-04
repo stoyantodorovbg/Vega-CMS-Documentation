@@ -20905,58 +20905,96 @@ section {
   height: 2rem;
 }
 
-.home-page {
-  background: #282828;
-  min-width: 100%;
-  min-height: 100%;
-  height: 100%;
-  padding: 0 2rem 2rem 2rem;
+.home-page .vega-section-main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.home-page .title {
-  color: peachpuff;
-  font-weight: bolder;
-  font-size: 7rem;
-  text-align: center;
-  padding-top: 18rem;
-  letter-spacing: 0.5rem;
+.home-page .vega-section-main .title {
+  margin: 0 0 2rem 0;
+  font-size: 2.2rem;
+  color: #35495e;
 }
 
-.home-page .sub-title {
-  font-size: 4.8rem;
+.home-page .vega-section-main .description {
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  text-align: left;
+  margin: 1rem 0;
 }
 
-.home-page .description {
-  font-size: 1.7rem;
-  color: peachpuff;
-  max-width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 5rem;
+.home-page .vega-section-main .description .list-header {
+  font-size: 1.8rem;
+  margin: 1rem 0;
 }
 
-.home-page .footer {
+.home-page .vega-section-main .description ul li {
+  margin: 1.5rem 0;
+}
+
+.home-page .vega-section-main .card,
+.home-page .vega-section-main .section-filters,
+.home-page .vega-section-main .section-grid,
+.home-page .vega-section-main .section-create-user {
+  padding: 2rem;
+  width: 100%;
+}
+
+.home-page .vega-section-main .btn-secondary {
+  min-width: 20rem;
+  padding: 1rem 0;
+  border-radius: 2rem;
+}
+
+.home-page .vega-section-main .homepage-banner-panel {
+  border-radius: 3rem;
+}
+
+.home-page .vega-section-main .homepage-banner {
+  border-radius: 3rem;
+  transition: 0.3s;
+}
+
+.home-page .vega-section-main .homepage-banner a {
+  display: flex;
+}
+
+.home-page .vega-section-main .homepage-banner:hover {
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.24);
+}
+
+.home-page .form-group .form-control {
+  padding: 1.5rem 2rem;
+  border-radius: 2rem;
+  height: auto;
+}
+
+.home-page .font-size-3_2 {
+  font-size: 3.2rem !important;
+}
+
+.logo-panel h5 {
   font-size: 1.5rem;
-  color: white;
-  text-align: right;
-  padding-top: 5rem;
-  padding-right: 3rem;
-  padding-bottom: 2rem;
-  margin-top: 32rem;
 }
 
-.documentation-pages {
+.documentation-pages,
+.home-page {
   min-width: 100%;
   background-color: #f7f7f7;
 }
 
-.documentation-pages .vega-cms-home {
+.documentation-pages .vega-cms-home,
+.home-page .vega-cms-home {
   font-size: 4.2rem;
   font-family: "Poppins", sans-serif;
   color: #35495e;
 }
 
-.documentation-pages .vega-cms-home-subtitle {
+.documentation-pages .vega-cms-home-subtitle,
+.home-page .vega-cms-home-subtitle {
   font-size: 2rem;
   font-family: "Poppins", sans-serif;
   color: #35495e;
@@ -20964,33 +21002,31 @@ section {
 
 @media (max-width: 1240px) {
   .documentation-pages .col-lg-2,
-  .documentation-pages .col-lg-10 {
+  .documentation-pages .col-lg-10,
+  .home-page .col-lg-2,
+  .home-page .col-lg-10 {
     width: 100%;
   }
 
-  .documentation-pages .documentation-home-sidebar {
+  .documentation-pages .documentation-home-sidebar,
+  .home-page .documentation-home-sidebar {
     height: auto;
   }
 
-  .documentation-pages .documentation-side-nav {
+  .documentation-pages .documentation-side-nav,
+  .home-page .documentation-side-nav {
     display: inline-flex !important;
     flex-wrap: wrap;
   }
 }
 
-.documentation-pages .navbar {
-  height: auto;
-}
-
-.documentation-pages .nav-item {
-  padding: 2rem 0;
-}
-
-.documentation-pages .sub-title {
+.documentation-pages .sub-title,
+.home-page .sub-title {
   font-size: 4.8rem;
 }
 
-.documentation-pages .content {
+.documentation-pages .content,
+.home-page .content {
   margin-top: 7rem;
   padding: 3rem 1.5rem;
   min-height: calc(100vh - 12.3rem);
@@ -20999,7 +21035,11 @@ section {
 .documentation-pages .content .card,
 .documentation-pages .content .section-filters,
 .documentation-pages .content .section-grid,
-.documentation-pages .content .section-create-user {
+.documentation-pages .content .section-create-user,
+.home-page .content .card,
+.home-page .content .section-filters,
+.home-page .content .section-grid,
+.home-page .content .section-create-user {
   border: 0;
   margin-bottom: 3rem;
   margin-top: 3rem;
@@ -21013,7 +21053,11 @@ section {
 .documentation-pages .content .card [class*=card-header-],
 .documentation-pages .content .section-filters [class*=card-header-],
 .documentation-pages .content .section-grid [class*=card-header-],
-.documentation-pages .content .section-create-user [class*=card-header-] {
+.documentation-pages .content .section-create-user [class*=card-header-],
+.home-page .content .card [class*=card-header-],
+.home-page .content .section-filters [class*=card-header-],
+.home-page .content .section-grid [class*=card-header-],
+.home-page .content .section-create-user [class*=card-header-] {
   margin: -2.5rem 1.5rem 0 1.5rem;
   border-radius: 6px;
   padding: 0;
@@ -21022,16 +21066,19 @@ section {
   padding: 1.5rem 1rem;
 }
 
-.documentation-pages .content .card-body {
+.documentation-pages .content .card-body,
+.home-page .content .card-body {
   background: white;
   margin-bottom: 1rem;
 }
 
-.documentation-pages .content .card-header-primary {
+.documentation-pages .content .card-header-primary,
+.home-page .content .card-header-primary {
   background: linear-gradient(45deg, #35495e, #41b883);
 }
 
-.documentation-pages .content .card-title {
+.documentation-pages .content .card-title,
+.home-page .content .card-title {
   letter-spacing: 2px;
   font-size: 2.2rem;
   color: white;
@@ -21041,57 +21088,68 @@ section {
   text-transform: uppercase;
 }
 
-.documentation-pages .content h1 {
+.documentation-pages .content h1,
+.home-page .content h1 {
   text-align: center;
   font-weight: bold;
   font-size: 3rem;
   margin-top: 7rem;
 }
 
-.documentation-pages .content h1 span {
+.documentation-pages .content h1 span,
+.home-page .content h1 span {
   font-weight: bolder;
 }
 
-.documentation-pages .content h2 {
+.documentation-pages .content h2,
+.home-page .content h2 {
   font-size: 2.5rem;
   font-weight: 500;
   margin: 4rem 0 2rem 0;
 }
 
-.documentation-pages .content p {
+.documentation-pages .content p,
+.home-page .content p {
   font-size: 1.8rem;
 }
 
-.documentation-pages .content p .url-text {
+.documentation-pages .content p .url-text,
+.home-page .content p .url-text {
   font-family: Courier, monospace;
 }
 
-.documentation-pages .content p .email {
+.documentation-pages .content p .email,
+.home-page .content p .email {
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
 }
 
-.documentation-pages .content p .password {
+.documentation-pages .content p .password,
+.home-page .content p .password {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
 }
 
-.documentation-pages .content pre {
+.documentation-pages .content pre,
+.home-page .content pre {
   background: lightgray;
   padding: 3rem;
   margin-right: 5rem;
 }
 
-.documentation-pages .content .command {
+.documentation-pages .content .command,
+.home-page .content .command {
   font-size: 2rem;
   margin-left: 5rem;
 }
 
-.documentation-pages .content .new-paragraph {
+.documentation-pages .content .new-paragraph,
+.home-page .content .new-paragraph {
   margin-top: 5rem;
 }
 
-.documentation-pages .footer {
+.documentation-pages .footer,
+.home-page .footer {
   background: #eee;
   font-size: 1.5rem;
   color: black;
@@ -21104,57 +21162,93 @@ section {
 }
 
 @media (max-width: 768px) {
-  .documentation-pages .content {
+  .documentation-pages .content,
+  .home-page .content {
     min-width: 100%;
   }
 
-  .documentation-pages .content h1 {
+  .documentation-pages .content h1,
+  .home-page .content h1 {
     font-size: 4rem;
   }
 
-  .documentation-pages .content h2 {
+  .documentation-pages .content h2,
+  .home-page .content h2 {
     font-size: 2.5rem;
   }
 
-  .documentation-pages .footer {
+  .documentation-pages .footer,
+  .home-page .footer {
     font-size: 1.2rem;
   }
 }
 
 @media (max-width: 576px) {
-  .documentation-pages .vega-cms-home {
+  .documentation-pages .vega-cms-home,
+  .home-page .vega-cms-home {
     margin-bottom: 30rem;
   }
 
-  .documentation-pages .content {
+  .documentation-pages .content,
+  .home-page .content {
     min-height: 56rem;
   }
 
-  .documentation-pages .content h1 {
+  .documentation-pages .content h1,
+  .home-page .content h1 {
     font-size: 3rem;
   }
 
-  .documentation-pages .content h2 {
+  .documentation-pages .content h2,
+  .home-page .content h2 {
     font-size: 2rem;
   }
 
-  .documentation-pages .footer {
+  .documentation-pages .footer,
+  .home-page .footer {
     bottom: 40px;
   }
 }
 
-.home-main-nav {
-  background: #282828;
+.documentation-pages .navbar,
+.home-page .navbar {
   height: auto;
-  padding-top: 3rem;
+}
+
+.home-main-nav {
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  justify-content: center;
+  padding: 1.5rem 0;
+}
+
+.home-main-nav .nav-item {
+  padding: 1.5rem;
+  margin: 0 3rem;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .home-main-nav .nav-item a {
-  padding: 4rem;
-  color: skyblue;
-  font-size: 2rem;
-  font-weight: bold;
-  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  border-radius: 3px;
+  color: #3C4858;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+.home-main-nav .nav-item:hover {
+  border-radius: 0.5rem;
+  background-color: #f7f7f7;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14);
+}
+
+.home-main-nav .nav-item:hover a {
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -21279,7 +21373,7 @@ section {
 }
 
 .documentation-home-main-nav .documentation-main-nav {
-  justify-content: center;
+  padding: 1.5rem 0;
   justify-content: center;
   left: 13rem;
   right: 0;
@@ -21289,20 +21383,30 @@ section {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 }
 
-.documentation-home-main-nav .documentation-main-nav div {
-  margin: 0 4rem;
+.documentation-home-main-nav .documentation-main-nav .nav-item {
+  padding: 1.5rem;
+  margin: 0 3rem;
   text-transform: uppercase;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-.documentation-home-main-nav .documentation-main-nav div a {
-  margin: 1rem 1.5rem 0;
+.documentation-home-main-nav .documentation-main-nav .nav-item a {
+  padding: 1rem 1.5rem;
   border-radius: 3px;
   color: #3C4858;
-  padding-left: 1rem;
-  padding-right: 1rem;
   text-transform: capitalize;
   font-size: 1.5rem;
-  padding: 1rem 1.5rem;
+}
+
+.documentation-home-main-nav .documentation-main-nav .nav-item:hover {
+  border-radius: 0.5rem;
+  background-color: #f7f7f7;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14);
+}
+
+.documentation-home-main-nav .documentation-main-nav .nav-item:hover a {
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {

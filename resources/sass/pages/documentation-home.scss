@@ -1,4 +1,5 @@
-.documentation-pages {
+.documentation-pages,
+.home-page {
     min-width: 100%;
     background-color: #f7f7f7;
 
@@ -24,13 +25,6 @@
             display: inline-flex!important;
             flex-wrap: wrap;
         }
-    }
-
-    .navbar {
-      height: auto;
-    }
-    .nav-item {
-      padding: 2rem 0;
     }
 
     .sub-title {
@@ -96,12 +90,6 @@
             font-weight: 500;
             margin: 4rem 0 2rem 0;
         }
-
-        // h3 {
-        //     font-size: 2.5rem;
-        //     font-weight: normal;
-        //     margin: 4rem 0 2rem 0;
-        // }
 
         p {
             font-size: 1.8rem;
@@ -187,5 +175,10 @@
         .footer {
             bottom: 40px;
         }
+    }
+
+
+    .navbar {
+      height: auto;
     }
 }

@@ -99,7 +99,7 @@
         },
 
         methods: {
-            setSidebarActive() {
+            setSidebarActiveClass() {
                 if (window.location.pathname === '/' + this.menuItemData.url) {
                     return  this.sidebarActiveClass = 'sidebar-active';
                 }
