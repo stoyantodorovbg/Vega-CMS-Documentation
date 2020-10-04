@@ -11,7 +11,7 @@
               <h1 class="title align-self-start font-size-3_2">News</h1>
               <div class="card">
                 <div class="img-panel">
-                  <img src="/Vega-CMS-Documentation/public/documentation-thumbnail.jpg" alt="Vega-Documentation" class="img-fluid">
+                  <img src="/documentation-thumbnail.jpg" alt="Vega-Documentation" class="img-fluid">
                 </div>
                 <div class="row">
                     <div class="col-12">
