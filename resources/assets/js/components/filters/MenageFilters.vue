@@ -61,7 +61,7 @@
            editing: false,
          }
        },
-      computed: {
+       computed: {
             filters: {
                 get: function() {
                      let filters = [];

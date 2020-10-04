@@ -31,11 +31,11 @@ export default {
     data() {
         return {
             menuData: {},
-            baseUrl: ''
+            baseUrl: '/'
         }
     },
 
-    mounted() {
+    created() {
         this.load();
     },
 
@@ -45,10 +45,6 @@ export default {
 
     methods: {
         load() {
-
-            //  this.baseUrl = '/Vega-CMS-Documentation/public/';
-            this.baseUrl = '/';
-            // this.$store.getters.locale === this.locale;
             axios.get(this.baseUrl + this.locale + 'menu-data', {
                 params: {
                     menu_id: this.menu_id
