@@ -27,7 +27,7 @@
                             <p><code class="command">php artisan integrate:vegacms-cms</code></p>
                             <p class="mt-5">The standard Laravel command runs Vega CMS seeders.</p>
                             <p><code class="command">php artisan db:seed</code></p>
-                            <p class="mt-5">Don't forget to change the users passwords before uploading your project to live server</p>
+                            <p class="mt-5">Don't forget to change the users passwords before uploading your project to live server.</p>
                             <p class="mt-5">
                                 Vega CMS is accessible in the browser at <span class="url-text font-weight-bold">{your host}/en/login</span>.
                             </p>
