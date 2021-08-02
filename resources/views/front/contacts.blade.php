@@ -9,7 +9,7 @@
         <div class="container">
           <section class="vega-section-main">
             <div class="card">
-              <h1 class="title">Contact Us</h1>
+              <h1 class="title">Contact us</h1>
               <div class="row">
                   @if(session('status'))
                       <div class="col-12 text-success">

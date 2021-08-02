@@ -18,9 +18,9 @@
                             <h3 class="card-title">Menus</h3>
                         </div>
                         <div class="card-body">
-                          <p>Vega CMS can renders menus from DB data.
-                              Menu data can be managed via Administration or DB seeder.</p>
-                          <h2>Manage Menu data via Administration</h2>
+                          <p>Vega CMS renders menus from DB.
+                              Menu data could be managed through Administration or DB seeder.</p>
+                          <h2>Manage Menu data from Administration</h2>
                           <h3>Manage menu elements</h3>
                           <img src="{{ asset('storage/documentation-screenshots/menus/menu-admin-form.png') }}"
                                alt="menu admin form" class="w-75"
@@ -33,7 +33,7 @@
                           <img src="{{ asset('storage/documentation-screenshots/menus/menu-html-active-title-description.png') }}"
                                alt="menu that has active title description" class="w-25"
                           >
-                          <p class="mt-3">Styles can be added to the main menu container easily. First define the key:</p>
+                          <p class="mt-3">Styles could be added to the main menu container easily. First define the key:</p>
                           <img src="{{ asset('storage/documentation-screenshots/menus/menu-style-define-key.png') }}"
                                alt="menu style define key" class="w-50"
                           >
@@ -45,24 +45,24 @@
                           <img src="{{ asset('storage/documentation-screenshots/menus/menu-added-style.png') }}"
                                alt="menu added style" class="w-50"
                           >
-                          <p class="mt-3">In the same way styles can be added to menu title and description.</p>
+                          <p class="mt-3">In the same way styles could be added to menu title and description.</p>
                           <h3>Manage menu items</h3>
                           <p>At the bottom of the page there is a link to menu items which are assigned to the menu.</p>
                           <img src="{{ asset('storage/documentation-screenshots/menus/menu-link-menu-items.png') }}"
                                alt="menu link menu items" class="w-75"
                           >
-                          <p class="mt-3">A menu item can be created through a form:</p>
+                          <p class="mt-3">A menu item could be created through a form:</p>
                           <img src="{{ asset('storage/documentation-screenshots/menus/create-menu-item-form.png') }}"
                                alt="create menu item form" class="w-75"
                           >
-                          <p class="mt-3">You can select a menu to which to add the menu item.</p>
-                          <p>When the selected menu have other menu items you can add the new one to an already existing.
-                               In this way the menu items can form a tree structure.</p>
+                          <p class="mt-3">Select a menu to which to add the menu item.</p>
+                          <p>When the selected menu have other menu items you could add the new one to an already existing.
+                               In this way the menu items are grouped in a tree structure.</p>
                           <p>URL field determines the page to which the menu item leads.</p>
                           <p>When the URL is for Administration section select the relevant prefix.</p>
-                          <p>Only menu items which have active status are displayed.</p>
-                          <p>Also HTML classes can be added.</p>
-                          <p>Title, description and styles can be managed in the same way like through the menu form.</p>
+                          <p>Only menu items with active status are displayed.</p>
+                          <p>Also HTML classes could be added.</p>
+                          <p>Title, description and styles could be managed in the same way.</p>
 
                           <h2>Manage Menu data via DB seeder</h2>
                           <p>This is a way to add a menu and menu items through DB seeder:</p>
@@ -150,7 +150,7 @@
 
                           </pre>
                           <h2>Front-end widget</h2>
-                          <p>When the menu data is ready this code renders it:</p>
+                          <p>This code renders the menu:</p>
                           <pre>
                             {{ '<dynamic-menu :menu_id="1"></dynamic-menu>' }}
                           </pre>
