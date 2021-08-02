@@ -11,7 +11,7 @@
               <div class="card">
                   <article class="description">
                       <h1 class="title">
-                          Vega CMS PHP Package is build on top of Laravel. <br> It's designed to facilitate the developers work providing ready - made basic functionalities such as:
+                          Vega CMS PHP Package is built on top of Laravel. <br> It's designed to facilitate the developers work providing ready - made basic functionalities such as:
                       </h1>
                       <ul>
                           <li>Administration user interface</li>

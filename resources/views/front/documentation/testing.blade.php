@@ -18,13 +18,11 @@
                             <h3 class="card-title">Testing</h3>
                         </div>
                         <div class="card-body">
-                            <p>If you want to run Vega CMS tests on your application, should integrate them with the command:</p>
+                            <p>This command line integrates Vega CMS tests:</p>
                             <p><code class="command">php artisan integrate:vegacms-cms-testing</code></p>
-                            <p>So</p>
+                            <p>and this runs the tests:</p>
                             <p><code class="command">phpunit vendor/vegacms/cms/tests</code></p>
-                            <p>runs Vega CMS tests</p>
-                            <p>As Vega CMS has functionalities that write into some PHP files, if some tests fail it could cause changes into these files.
-                                When testing Vega CMS use version control system to track any changes.
+                            <p>When testing Vega CMS it is highly recommended to use version control because there are tested functionalities which write into some PHP files - if some tests fail these files will remain changed.
                             </p>
                         </div>
                     </div>

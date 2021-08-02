@@ -18,8 +18,8 @@
                             <h3 class="card-title">Routing</h3>
                         </div>
                         <div class="card-body">
-                          <p>Vega CMS provides automated routes creating process.
-                              This service adds routes to separate files. It is not recommended to write code manually into them.
+                          <p>Vega CMS provides an automated process that creates routes.
+                              The service adds routes to separate files. It is not recommended to write code manually into them.
                               The route data is stored in DB. This provides
                               <a href="{{ route('documentation-localization') }}" >localization</a> and
                               <a href="{{ route('documentation-authorization') }}" >authorization</a> functionalities.</p>
@@ -30,13 +30,13 @@
                                alt="admin-create-route" class="w-75"
                           >
                           <h2>Create Route through the console</h2>
-                          <p>Though line like this an exemplary route is created:</p>
+                          <p>This line creates an exemplary route:</p>
                           <p><code class="command">
                                   php artisan generate:route /example-route get ExampleController@index front.example-route vega-web front \App\Http\Controllers\\
                               </code></p>
                           <p>Last three parameters are optional.</p>
                           <h2 id="create-route-through-db-seeder">Create Route through DB seeder</h2>
-                          <p>It's the recommended way for those who have enough knowledge to use PHP code.</p>
+                          <p>This is the recommended way.</p>
                           <pre>
                               use Vegacms\Cms\Models\Group;
                               use Vegacms\Cms\Models\Route;
@@ -135,10 +135,10 @@
                               }
                           </pre>
                           <h2>URL Prefix</h2>
-                          <p>A prefix to all routes could be added. It is described in
+                          <p>The way to add a prefix to all routes is described in
                               <a href="{{ route('documentation-localization') }}">localization</a> section.</p>
                           <h2>Authorization</h2>
-                          <p class="mb-5 pb-5">It is provided by middlewares. For more information see the
+                          <p class="mb-5 pb-5">Middlewares provide it. For more information see the
                               <a href="{{ route('documentation-authorization') }}">authorization</a> section.</p>
                         </div>
                     </div>

@@ -18,9 +18,8 @@
                           <h3 class="card-title">Authorization</h3>
                       </div>
                       <div class="card-body">
-                        <p>The authorization is provided by middlewares which are automatically added to the routes.
-                            They are related to the user groups.
-                            When a group is attached to route, only its members can access it.
+                        <p>Route Service adds to the routes middlewares which are related to the user groups.
+                            When a group is attached to a route, only group members can access it.
                         </p>
                         <h2>Create Group through Administration</h2>
                         <img src="{{ asset('storage/documentation-screenshots/groups/admin-form.png') }}"
@@ -47,7 +46,7 @@
                                 /**
                                  * @var GroupServiceInterface
                                  */
-                                private $groupService;
+                                protected $groupService;
 
                                 /**
                                  * GroupsTableSeeder constructor.
