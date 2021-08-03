@@ -19,7 +19,7 @@
                         </div>
                         <div class="card-body">
                           <p>Vega CMS renders menus from DB.
-                              Menu data could be managed through Administration or DB seeder.</p>
+                              Menu data could be managed via Administration or DB seeder.</p>
                           <h2>Manage Menu data from Administration</h2>
                           <h3>Manage menu elements</h3>
                           <img src="{{ asset('storage/documentation-screenshots/menus/menu-admin-form.png') }}"

@@ -49,7 +49,7 @@
   ],
   </pre>
                           <h2>Front-End Widget</h2>
-                          <p>When there is at least one active locale this widget could changes the active site locale:</p>
+                          <p>When there is at least one active locale this widget manages the active site locale:</p>
                           <pre>{{ '<change-locale></change-locale>' }}</pre>
                         </div>
                     </div>

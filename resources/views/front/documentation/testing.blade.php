@@ -22,7 +22,7 @@
                             <p><code class="command">php artisan integrate:vegacms-cms-testing</code></p>
                             <p>and this runs the tests:</p>
                             <p><code class="command">phpunit vendor/vegacms/cms/tests</code></p>
-                            <p>When testing Vega CMS it is highly recommended to use version control because there are tested functionalities which write into some PHP files - if some tests fail these files will remain changed.
+                            <p>When testing Vega CMS it is highly recommended to use version control system because there are tested functionalities which write code in PHP files - if some tests fail these files will remain changed.
                             </p>
                         </div>
                     </div>

@@ -19,7 +19,7 @@
                         </div>
                         <div class="card-body">
                             <p>Vega CMS renders pages from DB.
-                                Page data could be managed through Administration or DB seeder.</p>
+                                Page data could be managed via Administration or DB seeder.</p>
                             <h2>Manage Page data from Administration</h2>
                             <h3>Manage Page properties</h3>
                             <p>There are form fields for Status, URL, HTML classes, Title, Description, CSS styles and Meta tags.</p>

@@ -62,7 +62,7 @@
                              alt="JSON input JSON field added" class="w-50 mt-2"
                         >
                         <h2>JSON Presenter</h2>
-                        <p>JSON data can be presented easily by JsonPresenter Vue.js component:</p>
+                        <p>JsonPresenter Vue.js component presents JSON data easily:</p>
                         <pre>
                           {{
                               '<json-presenter :json_data="{{ $menu->title } }"></json-presenter>'

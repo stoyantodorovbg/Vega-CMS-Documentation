@@ -18,24 +18,24 @@
                             <h3 class="card-title">Routing</h3>
                         </div>
                         <div class="card-body">
-                          <p>Vega CMS provides an automated process that creates routes.
-                              The service adds routes to separate files. It is not recommended to write code manually into them.
-                              The route data is stored in DB. This provides
-                              <a href="{{ route('documentation-localization') }}" >localization</a> and
-                              <a href="{{ route('documentation-authorization') }}" >authorization</a> functionalities.</p>
+                          <p>Vega CMS offers an automated process to create routes.
+                              Route Service adds routes to separate files. It is not recommended to write code manually into them.
+                              The routes data is stored in DB.
+                              <a href="{{ route('documentation-localization') }}" >Localization</a> and
+                              <a href="{{ route('documentation-authorization') }}" >authorization</a> functionalities use this data.</p>
                           <p>There are three ways to add a route:</p>
-                          <h2>Create Route through Administration.</h2>
+                          <h2>Create Route via Administration.</h2>
                           <p>The form receives data in a format like this:</p>
                           <img src="{{ asset('storage/documentation-screenshots/routes/admin-create-route.png') }}"
                                alt="admin-create-route" class="w-75"
                           >
-                          <h2>Create Route through the console</h2>
+                          <h2>Create Route via console</h2>
                           <p>This line creates an exemplary route:</p>
                           <p><code class="command">
                                   php artisan generate:route /example-route get ExampleController@index front.example-route vega-web front \App\Http\Controllers\\
                               </code></p>
                           <p>Last three parameters are optional.</p>
-                          <h2 id="create-route-through-db-seeder">Create Route through DB seeder</h2>
+                          <h2 id="create-route-through-db-seeder">Create Route via DB seeder</h2>
                           <p>This is the recommended way.</p>
                           <pre>
                               use Vegacms\Cms\Models\Group;

@@ -21,7 +21,7 @@
                             <p>Vega CMS provides translation functionality related to the localization.
                                 It translates a phrase to selected locale when there is translated content.
                                 The phrases could be managed through Administration or DB seeder.</p>
-                            <h2>Translation management through Administration</h2>
+                            <h2>Translation management via Administration</h2>
                             <p>In Phrases section a translation could be created or edited.</p>
                             <img src="{{ asset('storage/documentation-screenshots/translations/admin-edit-translation.png') }}"
                                  alt="admin edit translation" class="w-75"

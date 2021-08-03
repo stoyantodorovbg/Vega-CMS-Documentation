@@ -18,17 +18,17 @@
                           <h3 class="card-title">Authorization</h3>
                       </div>
                       <div class="card-body">
-                        <p>Route Service adds to the routes middlewares which are related to the user groups.
-                            When a group is attached to a route, only group members can access it.
+                        <p>Route Service attaches middlewares to the routes. The middlewares are related to the user groups.
+                            When a group is attached to a route, only group members can use it.
                         </p>
-                        <h2>Create Group through Administration</h2>
+                        <h2>Create Group via Administration</h2>
                         <img src="{{ asset('storage/documentation-screenshots/groups/admin-form.png') }}"
                              alt="groups admin form" class="w-75"
                         >
                         <p class="mt-2">The title determines the class name of the created middleware.</p>
-                        <h2>Create Group through Console</h2>
+                        <h2>Create Group via Console</h2>
                         <p><code class="command">php artisan generate:group groupName groupDescription</code></p>
-                        <h2>Create Group through DB seeder</h2>
+                        <h2>Create Group via DB seeder</h2>
                         <p>The DB seeder could looks like this:</p>
                         <pre>
                             use Vegacms\Cms\Models\Group;
@@ -97,15 +97,15 @@
                             }
 
                         </pre>
-                        <h2>Attach/Detach Group to/from Route through Administration</h2>
+                        <h2>Attach/Detach Group to/from Route via Administration</h2>
                         <p>On edit route page select groups:</p>
                         <img src="{{ asset('storage/documentation-screenshots/groups/admin-attach-group-to-route.png') }}"
                              alt="attach group to route" class="w-75"
                         >
-                        <h2>Attach/Detach Group to/from Route through Console</h2>
+                        <h2>Attach/Detach Group to/from Route via Console</h2>
                         <p><code class="command">php artisan attach:route-to-group routeName groupTitle</code></p>
                         <p><code class="command">php artisan detach:route-from-group routeName groupTitle</code></p>
-                        <h2>Attach/Detach Group to/from Route through DB seeder</h2>
+                        <h2>Attach/Detach Group to/from Route via DB seeder</h2>
                         <p class="mb-5 pb-5">It is presented on <a href="{{ route('documentation-routing') }}#create-route-through-db-seeder">routing</a> page</p>
                       </div>
                     </div>
