@@ -20,24 +20,24 @@
                         <div class="card-body">
                             <h2>composer.json:</h2>
                             <h3>requires</h3>
-                            <p>php: ^7.2.5</p>
+                            <p>php: ^8.0.2</p>
                             <p>ext-json: *</p>
-                            <p>fideloper/proxy: ^4.0</p>
+                            <p>fideloper/proxy: ^4.4.1</p>
+                            <p>laravel/framework: ^9.0</p>
                             <p>laravel/tinker: ^2.0</p>
-                            <p>laravel/ui: ^2.0</p>
-                            <p>spatie/laravel-translatable: ^4.1</p>
+                            <p>laravel/ui: ^3.4.3</p>
+                            <p>spatie/laravel-translatable: ^5.2</p>
                             <h3>requires (dev)</h3>
-                            <p>laravel/framework: ^7.0</p>
                             <p>ext-json: *</p>
                             <p>barryvdh/laravel-debugbar: ^3.2</p>
                             <p>beyondcode/laravel-dump-server: ^1.0</p>
-                            <p>filp/whoops: ^2.0</p>
-                            <p>mockery/mockery: ^1.0</p>
-                            <p>fzaninotto/faker: ^1.4</p>
-                            <p>nunomaduro/collision: ^4.1</p>
-                            <p>phpunit/phpunit: ^8.5</p>
-                            <p>facade/ignition: ^2.0</p>
-                            <p>orchestra/testbench: 5.3.0</p>
+                            <p>filp/whoops: ^2.14.5</p>
+                            <p>mockery/mockery: ^1.4.4</p>
+                            <p>fakerphp/faker: ^1.19.0</p>
+                            <p>nunomaduro/collision: ^6.1</p>
+                            <p>phpunit/phpunit: ^9.5.10</p>
+                            <p>spatie/laravel-ignition: ^1.0</p>
+                            <p>laravel/sail: ^1.0.1</p>
                             <p>roave/security-advisories: dev-master</p>
                             <h2>package.json:</h2>
                             <h3>dependencies</h3>
