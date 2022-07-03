@@ -39,7 +39,7 @@
                             <img src="{{ asset('storage/documentation-screenshots/pages/page-container-html-classes.png') }}"
                                  alt="page container html classes" class="w-75"
                             >
-                            <p class="mt-5">Page container has four JSON fields</p>
+                            <p class="mt-5">Page container has JSON fields</p>
                             <img src="{{ asset('storage/documentation-screenshots/pages/page-container-json-fields.png') }}"
                                  alt="page container JSON fields" class="w-75"
                             >
@@ -47,7 +47,7 @@
                             <img src="{{ asset('storage/documentation-screenshots/pages/page-container-body.png') }}"
                                  alt="page container body" class="w-75"
                             >
-                            <p class="mt-5">Use JSON field to create nested HTML tags.</p>
+                            <p class="mt-5">Use JSON field to create nested HTML tags:</p>
                             <img src="{{ asset('storage/documentation-screenshots/pages/page-container-add-json-key.png') }}"
                                  alt="page container add JSON key" class="w-75"
                             >

@@ -60,7 +60,7 @@
                                In this way the menu items are grouped in a tree structure.</p>
                           <p>URL field determines the page to which the menu item leads.</p>
                           <p>When the URL is for Administration section select the relevant prefix.</p>
-                          <p>Only menu items with active status are displayed.</p>
+                          <p>Only menu items with active statuses are displayed.</p>
                           <p>Also HTML classes could be added.</p>
                           <p>Title, description and styles could be managed in the same way.</p>
 

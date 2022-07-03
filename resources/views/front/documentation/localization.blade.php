@@ -18,12 +18,12 @@
                             <h3 class="card-title">Localization</h3>
                         </div>
                         <div class="card-body">
-                          <p>Locales could be managed though Administration.</p>
+                          <p>The locales could be managed though Administration.</p>
                           <img src="{{ asset('storage/documentation-screenshots/locales/admin-edit-locale.png') }}"
                                alt="admin-edit-locale" class="w-75"
                           >
                           <h2>Language:</h2>
-                          <p>The locale language is displayed on a select box.</p>
+                          <p>Locale language is displayed on the select box.</p>
                           <img src="{{ asset('storage/documentation-screenshots/locales/locales-languages.png') }}"
                                alt="locales-widget-language" class="w-25"
                           >
@@ -35,7 +35,7 @@
                               'codes' => ['en', 'bg'],
                           ],
                           </pre>
-                          <p class="mt-5">This configuration provides two active locales added to URL:</p>
+                          <p class="mt-5">This configuration provides en and bg URL-s:</p>
                           <img src="{{ asset('storage/documentation-screenshots/locales/locale-code-configuration-en.png') }}"
                                alt="locale-code-configuration-en" class="w-25"
                           >

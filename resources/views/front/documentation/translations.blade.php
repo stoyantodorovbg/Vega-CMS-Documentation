@@ -18,7 +18,7 @@
                               <h3 class="card-title">Translations</h3>
                           </div>
                           <div class="card-body">
-                            <p>Vega CMS provides translation functionality related to the localization.
+                            <p>Translation functionality is related to the localization.
                                 It translates a phrase to selected locale when there is translated content.
                                 The phrases could be managed through Administration or DB seeder.</p>
                             <h2>Translation management via Administration</h2>

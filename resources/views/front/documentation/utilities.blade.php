@@ -33,7 +33,7 @@
                              alt="admin index page" class="w-75"
                         >
                         <h2>JSON input</h2>
-                        <p>JSON data could be presented and edited by dynamically rendered input fields. Send your JSON data to JsonInput Vue.js component:</p>
+                        <p>JSON data could be presented and edited by dynamically rendered input fields. Send your JSON data to JsonInput.js component:</p>
                         <pre>
                             {{
                                 '<json-input
@@ -62,7 +62,7 @@
                              alt="JSON input JSON field added" class="w-50 mt-2"
                         >
                         <h2>JSON Presenter</h2>
-                        <p>JsonPresenter Vue.js component presents JSON data easily:</p>
+                        <p>JsonPresenter.js component presents JSON data:</p>
                         <pre>
                           {{
                               '<json-presenter :json_data="{{ $menu->title } }"></json-presenter>'

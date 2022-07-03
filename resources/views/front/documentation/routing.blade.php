@@ -25,7 +25,7 @@
                               <a href="{{ route('documentation-authorization') }}" >authorization</a> functionalities use this data.</p>
                           <p>There are three ways to add a route:</p>
                           <h2>Create Route via Administration.</h2>
-                          <p>The form receives data in a format like this:</p>
+                          <p>The form accepts data in a format like this:</p>
                           <img src="{{ asset('storage/documentation-screenshots/routes/admin-create-route.png') }}"
                                alt="admin-create-route" class="w-75"
                           >
@@ -36,7 +36,7 @@
                               </code></p>
                           <p>Last three parameters are optional.</p>
                           <h2 id="create-route-through-db-seeder">Create Route via DB seeder</h2>
-                          <p>This is the recommended way.</p>
+                          <p>The seeder could looks like that:</p>
                           <pre>
                               use Vegacms\Cms\Models\Group;
                               use Vegacms\Cms\Models\Route;
@@ -138,7 +138,7 @@
                           <p>The way to add a prefix to all routes is described in
                               <a href="{{ route('documentation-localization') }}">localization</a> section.</p>
                           <h2>Authorization</h2>
-                          <p class="mb-5 pb-5">Middlewares provide it. For more information see the
+                          <p class="mb-5 pb-5">It's provided through middlewares. For more information see the
                               <a href="{{ route('documentation-authorization') }}">authorization</a> section.</p>
                         </div>
                     </div>

@@ -18,44 +18,11 @@
                             <h3 class="card-title">Requirements</h3>
                         </div>
                         <div class="card-body">
-                            <h2>composer.json:</h2>
-                            <h3>requires</h3>
                             <p>php: ^8.0.2</p>
-                            <p>ext-json: *</p>
-                            <p>fideloper/proxy: ^4.4.1</p>
                             <p>laravel/framework: ^9.0</p>
-                            <p>laravel/tinker: ^2.0</p>
-                            <p>laravel/ui: ^3.4.3</p>
                             <p>spatie/laravel-translatable: ^5.2</p>
-                            <h3>requires (dev)</h3>
-                            <p>ext-json: *</p>
-                            <p>barryvdh/laravel-debugbar: ^3.2</p>
-                            <p>beyondcode/laravel-dump-server: ^1.0</p>
-                            <p>filp/whoops: ^2.14.5</p>
-                            <p>mockery/mockery: ^1.4.4</p>
-                            <p>fakerphp/faker: ^1.19.0</p>
-                            <p>nunomaduro/collision: ^6.1</p>
-                            <p>phpunit/phpunit: ^9.5.10</p>
-                            <p>spatie/laravel-ignition: ^1.0</p>
-                            <p>laravel/sail: ^1.0.1</p>
-                            <p>roave/security-advisories: dev-master</p>
-                            <h2>package.json:</h2>
-                            <h3>dependencies</h3>
                             <p>vue: ^2.6.11</p>
                             <p>vuex: ^3.3.0</p>
-                            <p>bootstrap-vue: ^2.13.0</p>
-                            <p>laravel-vue-pagination: ^2.3.1</p>
-                            <p>vue-pluralize: 0.0.2</p>
-                            <p>@fortawesome/fontawesome-free: ^5.13.0</p>
-                            <h3>devDependencies</h3>
-                            <p>laravel-mix: ^5.0.1</p>
-                            <p>vue-template-compiler: ^2.6.11</p>
-                            <p>axios: ^0.19</p>
-                            <p>lodash: ^4.17.13</p>
-                            <p>resolve-url-loader: ^3.1.0</p>
-                            <p>sass: ^1.15.2</p>
-                            <p>sass-loader: ^8.0.0</p>
-                            <p class="mb-5 pb-5">cross-env: ^7.0</p>
                         </div>
                     </div>
                 </div>

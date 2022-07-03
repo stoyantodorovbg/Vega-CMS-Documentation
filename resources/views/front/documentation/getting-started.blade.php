@@ -19,7 +19,7 @@
                         </div>
                         <div class="card-body">
                             <h2>Installation:</h2>
-                            <p class="mt-5 pt-3">This command line adds Vega CMS Package to Laravel:</p>
+                            <p class="mt-5 pt-3">Add Vega CMS Package to Laravel:</p>
                             <p><code class="command">composer require vegacms/cms</code></p>
                             <p class="mt-5">The next command creates some route files, migrates database, publishes JS and SCSS assets, installs front-end
                                 dependencies and runs npm watcher.
@@ -27,7 +27,7 @@
                             <p><code class="command">php artisan integrate:vegacms-cms</code></p>
                             <p class="mt-5">The standard Laravel command runs Vega CMS seeders.</p>
                             <p><code class="command">php artisan db:seed</code></p>
-                            <p class="mt-5">Don't forget to change the users passwords before uploading your project to live server.</p>
+                            <p class="mt-5">Don't forget to change users passwords when upload your project to live.</p>
                             <p class="mt-5">
                                 Vega CMS is accessible in the browser at <span class="url-text font-weight-bold">{your host}/en/login</span>.
                             </p>

@@ -29,7 +29,7 @@
                         <h2>Create Group via Console</h2>
                         <p><code class="command">php artisan generate:group groupName groupDescription</code></p>
                         <h2>Create Group via DB seeder</h2>
-                        <p>The DB seeder could looks like this:</p>
+                        <p>The seeder could looks like that:</p>
                         <pre>
                             use Vegacms\Cms\Models\Group;
                             use Illuminate\Database\Seeder;
